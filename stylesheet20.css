@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+    background-color: #313131;
+}
+
+#main {
+    width: 960px;
+    background-color: white;
+    margin: auto;
+    color: #313131;
+}
+
+#header {
+    border-top: 5px solid #a8c254;
+}
