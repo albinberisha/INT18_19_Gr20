@@ -10,10 +10,13 @@ body {
     margin: auto;
 }
 
+#title {
+    padding: 20px;
+}
+
 #header {
     border-top: 5px solid #a7c353;
     display: flex;
-    padding: 20px;
 }
 
 #navigation {
@@ -26,6 +29,28 @@ body {
 
 #navigation ul li {
     display: inline-block;
-    padding: 20px;
+    font-size: 13px;
+    line-height: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#navigation ul li a {
+    text-decoration: none;
     color: #999999;
+}
+
+#shout {
+    font-size: 22px;
+    line-height: 31px;
+    color: #666666;
+    text-align: center;
+    width: 720px;
+    height: 60px;
+    margin: auto;
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
