@@ -55,3 +55,29 @@ body {
     margin-top: 35px;
     margin-bottom: 30px;
 }
+
+#slider {
+    margin-bottom: 20px;
+}
+
+#slider #image-container {
+    margin: auto;
+    width: 920px;
+    height: 350px;
+    overflow-y: hidden;
+}
+
+#slider #dots {
+    margin: auto;
+    margin-top: 20px;
+    width: max-content;
+}
+
+#slider #dots button {
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 7px;
+    background-color: #a7c353;
+    margin: 1px;
+}
