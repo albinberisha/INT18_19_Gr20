@@ -58,6 +58,7 @@ body {
 
 #slider {
     margin-bottom: 20px;
+    position: relative;
 }
 
 #slider #image-container {
@@ -80,4 +81,14 @@ body {
     border-radius: 7px;
     background-color: #a7c353;
     margin: 1px;
+}
+
+#slider #arrays button {
+    position: absolute;
+    width: max-content;
+    height: 30px;
+    background-color: #a7c353;
+    top: 160px;
+    bottom: 160px;
+    border: none;
 }

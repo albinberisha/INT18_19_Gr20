@@ -1,3 +1,5 @@
+var image_index = 0;
+
 var slider_images = [
     "Pictures\\prishtina.jpg",
     "Pictures\\malisheva.jpg",
@@ -5,6 +7,24 @@ var slider_images = [
 ];
 
 function select(i) {
-    var slider = document.getElementById('slider-image');
-    slider.src = slider_images[i];
+    var image = document.getElementById('slider-image');
+    var dots = document.getElementsByClassName('dots');
+    image_index = i;
+    image.src = slider_images[image_index];
+}
+
+function next() {
+    var image = document.getElementById('slider-image');
+    image_index++;
+    if(image_index > 2)
+        image_index = 0;
+    image.src = slider_images[image_index];
+}
+
+function previous() {
+    var image = document.getElementById('slider-image');
+    image_index--;
+    if(image_index < 0)
+        image_index = 2;
+    image.src = slider_images[image_index];
 }
