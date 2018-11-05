@@ -65,7 +65,8 @@ body {
     margin: auto;
     width: 920px;
     height: 350px;
-    overflow-y: hidden;
+    overflow: hidden;
+    position: relative;
 }
 
 #slider #dots {
@@ -83,7 +84,7 @@ body {
     margin: 1px;
 }
 
-#slider #arrays button {
+#slider #image-container #arrays button {
     position: absolute;
     width: max-content;
     height: 30px;
@@ -91,4 +92,12 @@ body {
     top: 160px;
     bottom: 160px;
     border: none;
+    color: white;
+}
+
+#slider #image-container #overlay {
+    position: absolute;
+    width: 350px;
+    right: 60px;
+    bottom: 20px;
 }
