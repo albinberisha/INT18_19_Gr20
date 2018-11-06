@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-color: #353535;
+    background-color: #313131;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -58,7 +58,6 @@ body {
 
 #slider {
     margin-bottom: 20px;
-    position: relative;
 }
 
 #slider #image-container {
@@ -109,13 +108,36 @@ body {
 	display: flex;
 }
 
+#details-contact .details-section .details-title {
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+#details-contact .details-section hr {
+    width: 225px;
+    height: 0.5px;
+    border: 0.5px solid #3a3a3a;
+    margin: 20px 0px;
+}
+
 .details-section {
 	padding-right: 20px;
     width: 225px;
     color: white;
+    font-size: 12px;
+    line-height: 19px;
+    color: #999999;
 }
 
-#footer {
+#copyright {
 	width: 960px;
 	margin: auto;
+}
+
+#copyright span {
+    font-size: 12px;
+    line-height: 12px;
+    color: #999999;
+    margin: 10px 0px;
 }
