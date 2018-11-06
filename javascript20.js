@@ -1,9 +1,9 @@
 var image_index = 0;
 
 var slider_images = [
-    "Pictures\\Galaxy Note9.jpg",
-    "Pictures\\Galaxy S6.jpg",
-    "Pictures\\Gear VR.jpg"
+    "Images\\Galaxy Note9.jpg",
+    "Images\\Galaxy S6.jpg",
+    "Images\\Gear VR.jpg"
 ];
 
 var slider_overlays = [
