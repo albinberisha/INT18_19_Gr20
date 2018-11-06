@@ -111,7 +111,8 @@ body {
 
 .details-section {
 	padding-right: 20px;
-	width: 225px;
+    width: 225px;
+    color: white;
 }
 
 #footer {
