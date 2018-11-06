@@ -3,13 +3,13 @@ var image_index = 0;
 var slider_images = [
     "Pictures\\Galaxy Note9.jpg",
     "Pictures\\Galaxy S6.jpg",
-    "Pictures\\prishtina.jpg"
+    "Pictures\\Gear VR.jpg"
 ];
 
 var slider_overlays = [
-    "Galaxy S6",
     "Galaxy Note9",
-    "Prishtina"
+    "Galaxy S6",
+    "Gear VR"
 ];
 
 function select(i) {
