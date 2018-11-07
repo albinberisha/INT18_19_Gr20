@@ -68,6 +68,11 @@ body {
     position: relative;
 }
 
+#slider #image-container #slider-image:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 #slider #dots {
     margin: auto;
     margin-top: 20px;
@@ -81,17 +86,29 @@ body {
     border-radius: 7px;
     background-color: #a7c353;
     margin: 1px;
+    transition: width 0.2s;
+    cursor: pointer;
+}
+
+#slider #dots button:hover {
+    width: 25px;
 }
 
 #slider #image-container #arrays button {
     position: absolute;
-    width: max-content;
+    width: 80px;
     height: 30px;
     background-color: #a7c353;
     top: 160px;
     bottom: 160px;
     border: none;
     color: white;
+    transition: width 0.5s;
+    cursor: pointer;
+}
+
+#slider #image-container #arrays button:hover {
+    width: 100px;
 }
 
 #slider #image-container #overlay {
