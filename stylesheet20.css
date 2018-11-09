@@ -88,6 +88,7 @@ body {
     margin: 1px;
     transition: width 0.2s;
     cursor: pointer;
+    -webkit-appearance: button-bevel;
 }
 
 #slider #dots button:hover {
@@ -95,20 +96,22 @@ body {
 }
 
 #slider #image-container #arrays button {
+    padding: 0px;
     position: absolute;
-    width: 80px;
-    height: 30px;
+    width: 54px;
+    height: 54px;
     background-color: #a7c353;
-    top: 160px;
-    bottom: 160px;
+    top: 148px;
+    bottom: 148px;
     border: none;
-    color: white;
+    border-radius: 27px;
     transition: width 0.5s;
     cursor: pointer;
+    -webkit-appearance: button-bevel;
 }
 
-#slider #image-container #arrays button:hover {
-    width: 100px;
+#slider #image-container #arrays button:active {
+    transform: scale(0.9);
 }
 
 #slider #image-container #overlay {

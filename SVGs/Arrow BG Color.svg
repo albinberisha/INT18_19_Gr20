@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" width="49" height="49">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<path id="BG Colour" class="shp0" d="M49,25c0,-13.26 -10.74,-24 -24,-24c-13.26,0 -24,10.75 -24,24c0,13.26 10.74,24 24,24c13.26,0 24,-10.74 24,-24z" />
+</svg>
