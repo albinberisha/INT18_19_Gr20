@@ -2,13 +2,105 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Sportii</title>
+    <title>Clearcut</title>
+		<link rel="stylesheet" href="stylesheet20.css" type="text/css">
+		<script src="javascript20.js"></script>
   </head>
-  <body> 
-    <p>tekst</p>
-    <p>Some text</p>
-    <p>s</p>
-
-    <p>some text</p>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div id="title">
+          <h1 style="margin: 0px; font-variant: small-caps; color: #666666; font-weight: normal; line-height: 32px; font-size: 32px;">RandomCorp</h1>
+          <h6 style="margin: 0px; color: #999999; font-weight: normal; line-height: 12px; font-size: 12px;">A Random Company</h6>
+        </div>
+        <div id="navigation">
+          <ul>
+            <li style="background-color: #a7c353;"><a href="index.html" style="color: white;">HOME</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">SERVICES</a></li>
+						<li><a href="Gallery.html">GALLERY</a></li>
+						<li><a href="Support.html">SUPPORT</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;"/>
+      <div id="shout">
+        <p>"All About Smartphone."</p>
+			</div>
+			<div id="slider">
+				<div id="image-container">
+          <img src="Images\Galaxy Note9.jpg" style="width: 920px; transition: transform 1s ease;" alt="" id="slider-image">
+          <div id="overlay">
+            <h2 id="overlay-title" style="background-color: #a7c353; font-size: 22px; line-height: 40px; color: white; text-align: center; font-weight: normal; margin: 0px; margin-bottom: 10px; width: 350px; height: 40px;">Galaxy Note9</h2>
+            <p id="overlay-description" style="background-color: #ffffff; width: 334px; height: 45px; font-size: 13px; line-height: 16px; color: #999999; margin: 0px; padding: 11.5px 8px;">ksa jsdkdajsl sa skldjas sks jslaj sljadkjd slkajdalkdj slasjdla oawiew ssfsjklfjks kf skjsslad s ksjdalkdjsl asdjskdjslj sjldjsdsaa</p>
+          </div>
+          <div id="arrays">
+            <button onclick="previous()" style="left: 0px;">Previous</button>
+            <button onclick="next()" style="right: 0px;">Next</button>
+          </div>
+        </div>
+				<div id="dots">
+					<button onclick="select(0)"></button>
+					<button onclick="select(1)"></button>
+          <button onclick="select(2)"></button>
+          <button onclick="select(3)"></button>
+					<button onclick="select(4)"></button>
+				</div>
+			</div>
+			<hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #e2e2e2; margin: 20px auto;"/>
+    </div>
+    <div id="details-contact">
+			<div id="details" class="details-section">
+				<span class="details-title">Company Details</span>
+				<hr/>
+				<span>Company Name</span>
+				<br/>
+				<span>Street Name & Number</span>
+				<br/>
+				<span>Town</span>
+				<br/>
+				<span>Postcode/Zip</span>
+				<br/>
+				<br/>
+				<span>Tel: xxxxx xxxxxxxxxx</span>
+				<br/>
+				<span>Fax: xxxxx xxxxxxxxxx</span>
+				<br/>
+				<span>Email: contact@mydomain.com</span>
+				<br/>
+				<br/>
+				<span>Officr Hours</span>
+				<br/>
+				<span>Monday - Friday: 08:00 - 17:30</span>
+				<br/>
+				<span>Saturday: 08:00 - 13:00</span>
+				<br/>
+			</div>
+			<div id="socials" class="details-section">
+				<span class="details-title">Stay Social</span>
+				<hr/>
+			</div>
+			<div id="blog" class="details-section">
+				<span class="details-title">From The Blog</span>
+				<hr/>
+			</div>
+			<div id="contact" class="details-section" style="padding-right: 0px;">
+				<span class="details-title">Contact Us</span>
+				<hr/>
+				<form>
+					<input name="name" placeholder="Name" type="text" required style="border: none; border-radius: 7px; margin-bottom: 10px; background-color: #383838; width: 215px; height: 31px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white;">
+					<br/>
+					<input name="email" placeholder="Email" type="email" required style="border: none; border-radius: 7px; margin-bottom: 10px; background-color: #383838; width: 215px; height: 31px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white;">
+					<br/>
+					<textarea name="message" placeholder="Message" required style="border: none; border-radius: 7px; margin-bottom: 4px; background-color: #383838; width: 215px; height: 110px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white; resize: none;"></textarea>
+					<input type="submit" value="SUBMIT" style="border: none; background-color: #a7c353; width: 80px; height: 31px; border-radius: 7px; color: #313131; padding: 0px; font-size: 13px; line-height: 21px;">
+				</form>
+			</div>
+		</div>
+		<hr style="width: 960px; border: 0.5px solid #3a3a3a; margin: 10px auto;"/>
+		<div id="copyright">
+			<span style="float: left;">Copyright © 2018 Domain Name - All Rights Reserved</span>
+			<span style="float: right;">Template by OS Templates</span>
+		</div>
   </body>
 </html>
