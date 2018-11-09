@@ -68,7 +68,7 @@ body {
     position: relative;
 }
 
-#slider #slider-container #slider-image:hover {
+#slider #image-container #slider-image:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
