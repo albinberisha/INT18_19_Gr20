@@ -138,6 +138,36 @@ body {
     overflow: hidden;
 }
 
+#content #services .services-section {
+    margin:20px 0px;
+    display:flex;
+}
+
+#content #services .services-section img {
+    float: left;
+    width: 64px;
+    height: 64px;
+}
+
+#content #services .services-section .services-section-content {
+    margin-left: 20px;
+}
+
+#content #services .services-section .services-section-content h6 {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #878787;
+}
+
+#content #services .services-section .services-section-content p {
+    width: 197px;
+    height: 48px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #868686;
+}
+
 #details-contact {
 	width: 960px;
 	margin: auto;
