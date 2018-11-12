@@ -121,6 +121,23 @@ body {
     bottom: 20px;
 }
 
+#content {
+    display: flex;
+}
+
+#content .content-section {
+    margin: 0px 20px;
+    width: 280px;
+}
+
+#content #about #about-image-container {
+    border: 1px solid #e2e2e2;
+    padding: 4px;
+    width: 270px;
+    height: 140px;
+    overflow: hidden;
+}
+
 #details-contact {
 	width: 960px;
 	margin: auto;
