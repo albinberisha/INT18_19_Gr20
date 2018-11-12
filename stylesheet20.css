@@ -166,6 +166,30 @@ body {
     font-size: 13px;
     line-height: 18px;
     color: #868686;
+    margin: 7px 0;
+}
+
+#testimonials .testimonials-section .testimonials-section-header {
+    width: 280px;
+    height: 44px;
+    display: inline-table;
+}
+
+#testimonials .testimonials-section .testimonials-section-header h6 {
+    font-size: 16px;
+    line-height: 19px;
+    color: #989898;
+    margin: 0px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#testimonials .testimonials-section p {
+    width: 278px;
+    height: 103px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #888888;
 }
 
 #details-contact {
@@ -185,16 +209,47 @@ body {
     width: 225px;
     height: 0.5px;
     border: 0.5px solid #3a3a3a;
-    margin: 20px 0px;
+    margin: 15px 0px;
 }
 
-.details-section {
+#details-contact .details-section {
 	padding-right: 20px;
     width: 225px;
     color: white;
     font-size: 12px;
     line-height: 19px;
     color: #999999;
+}
+
+#details-contact #social .social-section {
+    display: inline-table;
+}
+
+#details-contact #social .social-hr {
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+#details-contact #social .social-section .social-SVG-container {
+    width: 32px;
+    height: 32px;
+    background-color: #383838;
+    border-radius: 16px;
+    position: relative;
+    margin-right: 10px;
+}
+
+#details-contact #social .social-section .social-SVG-container img {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+}
+
+#details-contact #social .social-section a {
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #a7c353;
 }
 
 #copyright {
@@ -207,8 +262,4 @@ body {
     line-height: 12px;
     color: #999999;
     margin: 10px 0px;
-}
-
-#container #vesa{
-    width:100%;
 }
