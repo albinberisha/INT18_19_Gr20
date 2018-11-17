@@ -263,3 +263,14 @@ body {
     color: #999999;
     margin: 10px 0px;
 }
+#details-contact #blog .blog-section {
+    margin-bottom: 20px;
+}
+
+#details-contact #blog .blog-section .blog-section-title {
+    font-size: 13px;
+    line-height: 16px;
+    color: #999999;
+    font-weight: bold;
+    margin: 0px;
+}
