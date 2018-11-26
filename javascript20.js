@@ -1,17 +1,17 @@
 var image_index = 0;
 
 var slider_images = [
+    "Images\\Be Together.png",
     "Images\\Galaxy Note9.jpg",
     "Images\\The Frame TV.jpg",
-    "Images\\Gear VR.jpg",
     "Images\\Galaxy Watch.jpg",
-    "Images\\Galaxy A9.jpg"
+    "Images\\Galaxy A9 quad.jpg"
 ];
 
 var slider_overlays = [
+    "Discover The Galaxy",
     "Galaxy Note9",
     "The Frame TV",
-    "Gear VR",
     "Galaxy Watch",
     "Galaxy A9"
 ];
