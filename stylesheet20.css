@@ -361,3 +361,22 @@ body {
     cursor: pointer;
     color: #666666;
 }
+#support-search-section {
+    margin: auto;
+    width: 920px;
+    height: 600px;
+    position: relative;
+}
+
+#support-search-section #support-search-form-container {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    z-index: 1;
+}
+
+#support-search-section #support-search-image-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
