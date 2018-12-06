@@ -1,217 +1,234 @@
 <!DOCTYPE html>
 <html>
-  <head>
-		<meta charset="utf-8">
-		<title>Samsung | Home</title>
-		<link rel="icon" href="Icons\favicon.ico">
-		<link rel="stylesheet" href="stylesheet20.css" type="text/css">
-		<script src="javascript20.js"></script>
-  </head>
-  <body>
-    <div id="main">
-      <header>
-        <div id="title">
-          <h1 style="margin: 0px; font-variant: small-caps; color: #666666; font-weight: normal; line-height: 32px; font-size: 32px;">Samsung</h1>
-          <h6 style="margin: 0px; color: #999999; font-weight: normal; line-height: 12px; font-size: 12px;">#DoWhatYouCant</h6>
-        </div>
-        <nav>
-          <ul>
-            <li style="background-color: #a7c353;"><a href="index.html" style="color: white;">HOME</a></li>
-            <li><a href="Products.html">PRODUCTS</a></li>
-            <li><a href="Services.html">SERVICES</a></li>
-						<li><a href="Gallery.html">GALLERY</a></li>
-						<li><a href="Support.html">SUPPORT</a></li>
-          </ul>
-        </nav>
-      </header>
-      <hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;"/>
-      <div id="shout">
-				<p>
-					"Imagine the amazing things we can build."<br/>
-					"Do bigger things."
+
+<head>
+	<meta charset="utf-8">
+	<title>Samsung | Home</title>
+	<link rel="icon" href="Icons\favicon.ico">
+	<link rel="stylesheet" href="stylesheet20.css" type="text/css">
+	<script src="javascript20.js"></script>
+</head>
+
+<body>
+	<div id="main">
+		<header id="main-header">
+			<div id="title">
+				<h1 style="margin: 0px; font-variant: small-caps; color: #666666; font-weight: normal; line-height: 32px; font-size: 32px;">Samsung</h1>
+				<h6 style="margin: 0px; color: #999999; font-weight: normal; line-height: 12px; font-size: 12px;">#DoWhatYouCant</h6>
+			</div>
+			<nav>
+				<ul>
+					<li style="background-color: #a7c353;"><a href="index.html" style="color: white;">HOME</a></li>
+					<li><a href="Products.html">PRODUCTS</a></li>
+					<li><a href="Shop.html">SHOP</a></li>
+					<li><a href="Gallery.html">GALLERY</a></li>
+					<li><a href="Support.html">SUPPORT</a></li>
+				</ul>
+			</nav>
+		</header>
+		<hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;" />
+		<div id="shout">
+			<p>
+				"Imagine the amazing things we can build."<br />
+				"Do bigger things."
+			</p>
+		</div>
+		<div id="slider">
+			<div id="image-container">
+				<img src="Images\Be Together.png" style="width: 920px; transition: transform 1s ease;" alt="" id="slider-image">
+				<div id="overlay">
+					<h2 id="overlay-title" style="background-color: #a7c353; font-size: 22px; line-height: 40px; color: white; text-align: center; font-weight: normal; margin: 0px; margin-bottom: 10px; width: 350px; height: 40px;">Galaxy
+						Note9</h2>
+					<p id="overlay-description" style="background-color: #ffffff; width: 334px; height: 45px; font-size: 13px; line-height: 16px; color: #999999; margin: 0px; padding: 11.5px 8px;">ksa
+						jsdkdajsl sa skldjas sks jslaj sljadkjd slkajdalkdj slasjdla oawiew ssfsjklfjks kf skjsslad s ksjdalkdjsl
+						asdjskdjslj sjldjsdsaa</p>
+				</div>
+				<div id="arrays">
+					<button onclick="previous()" style="left: 5px;">
+						<img src="SVGs\Arrow BG Color.svg" style="position: absolute; z-index: 1; top: 2px; left: 2px;">
+						<img src="SVGs\Left Arrow.svg" style="position: absolute; z-index: 2; top: 13px; left: 19px;">
+					</button>
+					<button onclick="next()" style="right: 5px;">
+						<img src="SVGs\Arrow BG Color.svg" style="position: absolute; z-index: 1; top: 2px; left: 2px;">
+						<img src="SVGs\Right Arrow.svg" style="position: absolute; z-index: 2; top: 13px; left: 19px;">
+					</button>
+				</div>
+			</div>
+			<div id="dots">
+				<button onclick="select(0)"></button>
+				<button onclick="select(1)"></button>
+				<button onclick="select(2)"></button>
+				<button onclick="select(3)"></button>
+				<button onclick="select(4)"></button>
+			</div>
+		</div>
+		<hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #e2e2e2; margin: 40px auto;" />
+		<div id="content">
+			<div id="about" class="content-section">
+				<h5 style="font-size: 22px; line-height: 26px; color: #666666; font-weight: normal; margin: 25px 0px; margin-top: 0px;">A
+					Little About Us</h5>
+				<div id="about-image-container">
+					<img src="Images/Samsung Headquarters.jpg" width="100%">
+				</div>
+				<p style="font-size: 13px; line-height: 18px; color: #999999; margin: 20px 0px;">
+					Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non
+					tellus laoreet tincidunt ut vel velit nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt.<br />
+					<br />
+					Idenim semper pellente velis felit ac. Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget
+					tincidunt.
 				</p>
 			</div>
-			<div id="slider">
-				<div id="image-container">
-          <img src="Images\Be Together.png" style="width: 920px; transition: transform 1s ease;" alt="" id="slider-image">
-          <div id="overlay">
-            <h2 id="overlay-title" style="background-color: #a7c353; font-size: 22px; line-height: 40px; color: white; text-align: center; font-weight: normal; margin: 0px; margin-bottom: 10px; width: 350px; height: 40px;">Galaxy Note9</h2>
-            <p id="overlay-description" style="background-color: #ffffff; width: 334px; height: 45px; font-size: 13px; line-height: 16px; color: #999999; margin: 0px; padding: 11.5px 8px;">ksa jsdkdajsl sa skldjas sks jslaj sljadkjd slkajdalkdj slasjdla oawiew ssfsjklfjks kf skjsslad s ksjdalkdjsl asdjskdjslj sjldjsdsaa</p>
-          </div>
-          <div id="arrays">
-						<button onclick="previous()" style="left: 5px;">
-							<img src="SVGs\Arrow BG Color.svg" style="position: absolute; z-index: 1; top: 2px; left: 2px;">
-							<img src="SVGs\Left Arrow.svg" style="position: absolute; z-index: 2; top: 13px; left: 19px;">
-						</button>
-						<button onclick="next()" style="right: 5px;">
-							<img src="SVGs\Arrow BG Color.svg" style="position: absolute; z-index: 1; top: 2px; left: 2px;">
-							<img src="SVGs\Right Arrow.svg" style="position: absolute; z-index: 2; top: 13px; left: 19px;">
-						</button>
-          </div>
-        </div>
-				<div id="dots">
-					<button onclick="select(0)"></button>
-					<button onclick="select(1)"></button>
-          <button onclick="select(2)"></button>
-          <button onclick="select(3)"></button>
-					<button onclick="select(4)"></button>
+			<div id="services" class="content-section">
+				<h5 style="font-size: 22px; line-height: 26px; color: #666666; font-weight: normal; margin: 25px 0px; margin-top: 0px;">Some
+					Of Our Services</h5>
+				<div class="services-section">
+					<img src="Images/J7.png" alt="" />
+					<div class="services-section-content">
+						<h6>Service Title</h6>
+						<p>Inteligula congue id elis donec sce sag ittis intes id laorret aenena</p>
+					</div>
+				</div>
+				<div class="services-section">
+					<img src="Images/J7.png" alt="" />
+					<div class="services-section-content">
+						<h6>Service Title</h6>
+						<p>Inteligula congue id elis donec sce sag ittis intes id laorret aenena</p>
+					</div>
+				</div>
+				<div class="services-section">
+					<img src="Images/J7.png" alt="" />
+					<div class="services-section-content">
+						<h6>Service Title</h6>
+						<p>Inteligula congue id elis donec sce sag ittis intes id laorret aenena</p>
+					</div>
+				</div>
+				<div class="services-section">
+					<img src="Images/J7.png" alt="" />
+					<div class="services-section-content">
+						<h6>Service Title</h6>
+						<p>Inteligula congue id elis donec sce sag ittis intes id laorret aenena</p>
+					</div>
 				</div>
 			</div>
-			<hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #e2e2e2; margin: 40px auto;"/>
-			<div id="content">
-				<div id="about" class="content-section">
-					<h5 style="font-size: 22px; line-height: 26px; color: #666666; font-weight: normal; margin: 25px 0px; margin-top: 0px;">A Little About Us</h5>
-					<div id="about-image-container">
-						<img src="Images/Samsung Headquarters.jpg" width="100%">
+			<div id="testimonials" class="content-section">
+				<h5 style="font-size: 22px; line-height: 26px; color: #666666; font-weight: normal; margin: 25px 0px; margin-top: 0px;">What
+					Our Clients Say</h5>
+				<div class="testimonials-section">
+					<div class="testimonials-section-header">
+						<img src="SVGs/Composite Path.svg" style="float: left; width: 53px; height: 44px;">
+						<h6>Tommy Tanker <span style="font-weight: normal;">- CEO</span></h6>
 					</div>
-					<p style="font-size: 13px; line-height: 18px; color: #999999; margin: 20px 0px;">
-						Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt.<br/>
-						<br/>
-						Idenim semper pellente velis felit ac. Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt.
-					</p>
+					<p>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a
+						non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
 				</div>
-				<div id="services" class="content-section">
-					<h5 style="font-size: 22px; line-height: 26px; color: #666666; font-weight: normal; margin: 25px 0px; margin-top: 0px;">Some Of Our Services</h5>
-					<div class="services-section">
-						<img src="Images/J7.png" alt=""/>
-						<div class="services-section-content">
-							<h6>Service Title</h6>
-							<p>Inteligula congue id elis donec sce sag ittis intes id laorret aenena</p>
-						</div>
+				<div class="testimonials-section">
+					<div class="testimonials-section-header">
+						<img src="SVGs/Composite Path.svg" style="float: left; width: 53px; height: 44px;">
+						<h6>Tommy Tanker <span style="font-weight: normal;">- CEO</span></h6>
 					</div>
-					<div class="services-section">
-						<img src="Images/J7.png" alt=""/>
-						<div class="services-section-content">
-							<h6>Service Title</h6>
-							<p>Inteligula congue id elis donec sce sag ittis intes id laorret aenena</p>
-						</div>
-					</div>
-					<div class="services-section">
-						<img src="Images/J7.png" alt=""/>
-						<div class="services-section-content">
-							<h6>Service Title</h6>
-							<p>Inteligula congue id elis donec sce sag ittis intes id laorret aenena</p>
-						</div>
-					</div>
-					<div class="services-section">
-						<img src="Images/J7.png" alt=""/>
-						<div class="services-section-content">
-							<h6>Service Title</h6>
-							<p>Inteligula congue id elis donec sce sag ittis intes id laorret aenena</p>
-						</div>
-					</div>
-				</div>
-				<div id="testimonials" class="content-section">
-					<h5 style="font-size: 22px; line-height: 26px; color: #666666; font-weight: normal; margin: 25px 0px; margin-top: 0px;">What Our Clients Say</h5>
-					<div class="testimonials-section">
-						<div class="testimonials-section-header">
-							<img src="SVGs/Composite Path.svg" style="float: left; width: 53px; height: 44px;">
-							<h6>Tommy Tanker <span style="font-weight: normal;">- CEO</span></h6>
-						</div>
-						<p>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
-					</div>
-					<div class="testimonials-section">
-						<div class="testimonials-section-header">
-							<img src="SVGs/Composite Path.svg" style="float: left; width: 53px; height: 44px;">
-							<h6>Tommy Tanker <span style="font-weight: normal;">- CEO</span></h6>
-						</div>
-						<p>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
-					</div>
+					<p>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a
+						non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
 				</div>
 			</div>
 		</div>
-    <div id="details-contact">
-			<div id="details" class="details-section">
-				<span class="details-title" id="dtl">Company Details</span>
-				<hr/>
-				<span>Company Name</span>
-				<br/>
-				<span>Street Name & Number</span>
-				<br/>
-				<span>Town</span>
-				<br/>
-				<span>Postcode/Zip</span>
-				<br/>
-				<br/>
-				<span>Tel: xxxxx xxxxxxxxxx</span>
-				<br/>
-				<span>Fax: xxxxx xxxxxxxxxx</span>
-				<br/>
-				<span>Email: <span style="color: #a7c353;">contact@mydomain.com</span></span>
-				<br/>
-				<br/>
-				<span>Office Hours</span>
-				<br/>
-				<span>Monday - Friday: 08:00 - 17:30</span>
-				<br/>
-				<span>Saturday: 08:00 - 13:00</span>
-				<br/>
+	</div>
+	<div id="details-contact">
+		<div id="details" class="details-section">
+			<span class="details-title" id="dtl">Company Details</span>
+			<hr />
+			<span>Company Name</span>
+			<br />
+			<span>Street Name & Number</span>
+			<br />
+			<span>Town</span>
+			<br />
+			<span>Postcode/Zip</span>
+			<br />
+			<br />
+			<span>Tel: xxxxx xxxxxxxxxx</span>
+			<br />
+			<span>Fax: xxxxx xxxxxxxxxx</span>
+			<br />
+			<span>Email: <span style="color: #a7c353;">contact@mydomain.com</span></span>
+			<br />
+			<br />
+			<span>Office Hours</span>
+			<br />
+			<span>Monday - Friday: 08:00 - 17:30</span>
+			<br />
+			<span>Saturday: 08:00 - 13:00</span>
+			<br />
+		</div>
+		<div id="social" class="details-section">
+			<span class="details-title">Stay Social</span>
+			<hr />
+			<div class="social-section">
+				<div class="social-SVG-container">
+					<img src="SVGs/icon-linkedin.svg">
+				</div>
+				<a href="https://www.linkedin.com">Get linked up in LinkedIn</a>
 			</div>
-			<div id="social" class="details-section">
-				<span class="details-title">Stay Social</span>
-				<hr/>
-				<div class="social-section">
-					<div class="social-SVG-container">
-						<img src="SVGs/icon-linkedin.svg">
-					</div>
-					<a href="https://www.linkedin.com">Get linked up in LinkedIn</a>
+			<hr class="social-hr" />
+			<div class="social-section">
+				<div class="social-SVG-container">
+					<img src="SVGs/icon-twitter.svg">
 				</div>
-				<hr class="social-hr"/>
-				<div class="social-section">
-					<div class="social-SVG-container">
-						<img src="SVGs/icon-twitter.svg">
-					</div>
-					<a href="https://www.twitter.com">Keep up with our Tweets</a>
-				</div>
-				<hr class="social-hr"/>
-				<div class="social-section">
-					<div class="social-SVG-container">
-						<img src="SVGs/icon-pinterest.svg">
-					</div>
-					<a href="https://www.pinterest.com">Photos on Pinterest</a>
-				</div>
-				<hr class="social-hr"/>
-				<div class="social-section">
-					<div class="social-SVG-container">
-						<img src="SVGs/icon-rss.svg">
-					</div>
-					<a href="https://www.rss.com">RSS Feed</a>
-				</div>
-				<hr class="social-hr"/>
+				<a href="https://www.twitter.com">Keep up with our Tweets</a>
 			</div>
-			<div id="blog" class="details-section">
-				<span class="details-title">From The Blog</span>
-				<hr/>
-				<div class="blog-section">
-					<h6 class="blog-section-title">Blog Post Title</h6>
-					<p style="font-size: 11px; line-height: 13px; color: #999999; margin: 5px 0px;">Posted by Admin on 00.00.0000</p>
-					<p style="font-size: 12px; line-height: 19px; color: #999999; margin: 5px 0px;">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
-					<p style="text-align: right; margin: 10px 0px;"><a href="#" style="width: 225px; font-size: 12px; line-height: 14px; color: #a7c353; text-decoration: none;">Read More »</a></p>
+			<hr class="social-hr" />
+			<div class="social-section">
+				<div class="social-SVG-container">
+					<img src="SVGs/icon-pinterest.svg">
 				</div>
-				<div class="blog-section">
-					<h6 class="blog-section-title">Blog Post Title</h6>
-					<p style="font-size: 11px; line-height: 13px; color: #999999; margin: 5px 0px;">Posted by Admin on 00.00.0000</p>
-					<p style="font-size: 12px; line-height: 19px; color: #999999; margin: 5px 0px;">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
-					<p style="text-align: right; margin: 10px 0px;"><a href="#" style="width: 225px; font-size: 12px; line-height: 14px; color: #a7c353; text-decoration: none;">Read More »</a></p>
-				</div>
+				<a href="https://www.pinterest.com">Photos on Pinterest</a>
 			</div>
-			<div id="contact" class="details-section" style="padding-right: 0px;">
-				<span class="details-title">Contact Us</span>
-				<hr class="social-hr"/>
-				<form>
-					<input name="name" placeholder="Name" type="text" required style="border: none; border-radius: 7px; margin-bottom: 10px; background-color: #383838; width: 215px; height: 31px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white;">
-					<br/>
-					<input name="email" placeholder="Email" type="email" required style="border: none; border-radius: 7px; margin-bottom: 10px; background-color: #383838; width: 215px; height: 31px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white;">
-					<br/>
-					<textarea name="message" placeholder="Message" required style="border: none; border-radius: 7px; margin-bottom: 4px; background-color: #383838; width: 215px; height: 110px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white; resize: none;"></textarea>
-					<input type="submit" value="SUBMIT" style="border: none; background-color: #a7c353; width: 80px; height: 31px; border-radius: 7px; color: #313131; padding: 0px; font-size: 13px; line-height: 21px; font-weight: bold;">
-				</form>
+			<hr class="social-hr" />
+			<div class="social-section">
+				<div class="social-SVG-container">
+					<img src="SVGs/icon-rss.svg">
+				</div>
+				<a href="https://www.rss.com">RSS Feed</a>
+			</div>
+			<hr class="social-hr" />
+		</div>
+		<div id="blog" class="details-section">
+			<span class="details-title">From The Blog</span>
+			<hr />
+			<div class="blog-section">
+				<h6 class="blog-section-title">Blog Post Title</h6>
+				<p style="font-size: 11px; line-height: 13px; color: #999999; margin: 5px 0px;">Posted by Admin on 00.00.0000</p>
+				<p style="font-size: 12px; line-height: 19px; color: #999999; margin: 5px 0px;">Vestibulumaccumsan egestibulum eu
+					justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
+				<p style="text-align: right; margin: 10px 0px;"><a href="#" style="width: 225px; font-size: 12px; line-height: 14px; color: #a7c353; text-decoration: none;">Read
+						More »</a></p>
+			</div>
+			<div class="blog-section">
+				<h6 class="blog-section-title">Blog Post Title</h6>
+				<p style="font-size: 11px; line-height: 13px; color: #999999; margin: 5px 0px;">Posted by Admin on 00.00.0000</p>
+				<p style="font-size: 12px; line-height: 19px; color: #999999; margin: 5px 0px;">Vestibulumaccumsan egestibulum eu
+					justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
+				<p style="text-align: right; margin: 10px 0px;"><a href="#" style="width: 225px; font-size: 12px; line-height: 14px; color: #a7c353; text-decoration: none;">Read
+						More »</a></p>
 			</div>
 		</div>
-		<hr style="width: 960px; border: 0.5px solid #3a3a3a; margin: 10px auto;"/>
-		<div id="copyright">
-			<span style="float: left;">Copyright © 2018 Domain Name - All Rights Reserved</span>
-			<span style="float: right;">Template by OS Templates</span>
+		<div id="contact" class="details-section" style="padding-right: 0px;">
+			<span class="details-title">Contact Us</span>
+			<hr class="social-hr" />
+			<form>
+				<input name="name" placeholder="Name" type="text" required style="border: none; border-radius: 7px; margin-bottom: 10px; background-color: #383838; width: 215px; height: 31px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white;">
+				<br />
+				<input name="email" placeholder="Email" type="email" required style="border: none; border-radius: 7px; margin-bottom: 10px; background-color: #383838; width: 215px; height: 31px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white;">
+				<br />
+				<textarea name="message" placeholder="Message" required style="border: none; border-radius: 7px; margin-bottom: 4px; background-color: #383838; width: 215px; height: 110px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white; resize: none;"></textarea>
+				<input type="submit" value="SUBMIT" style="border: none; background-color: #a7c353; width: 80px; height: 31px; border-radius: 7px; color: #313131; padding: 0px; font-size: 13px; line-height: 21px; font-weight: bold;">
+			</form>
 		</div>
-  </body>
+	</div>
+	<hr style="width: 960px; border: 0.5px solid #3a3a3a; margin: 10px auto;" />
+	<div id="copyright">
+		<span style="float: left;">Copyright © 2018 Domain Name - All Rights Reserved</span>
+		<span style="float: right;">Template by OS Templates</span>
+	</div>
+</body>
+
 </html>
