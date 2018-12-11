@@ -279,6 +279,15 @@ body {
     padding: 20px;
 }
 
+#shopping-new-offers-section {
+    margin: auto;
+    width: 920px;
+}
+
+#shopping-new-offers-image-container {
+    
+}
+
 #shopping-description-title {
     text-align: center;
     color: #666666;
