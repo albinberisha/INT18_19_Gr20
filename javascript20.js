@@ -69,9 +69,10 @@ function selectProductsCategory(i) {
         document.getElementById('tv-category').style = "border-bottom: solid 3px #a7c353";
         document.getElementById('wearable-category').style = "border-bottom: none";
     }
-    if(i == 3) {document.getElementById('smartphone-category').style = "border-bottom: none";
-    document.getElementById('tablet-category').style = "border-bottom: none";
-    document.getElementById('tv-category').style = "border-bottom: none";
-    document.getElementById('wearable-category').style = "border-bottom: solid 3px #a7c353";
+    if(i == 3) {
+        document.getElementById('smartphone-category').style = "border-bottom: none";
+        document.getElementById('tablet-category').style = "border-bottom: none";
+        document.getElementById('tv-category').style = "border-bottom: none";
+        document.getElementById('wearable-category').style = "border-bottom: solid 3px #a7c353";
     }
 }
