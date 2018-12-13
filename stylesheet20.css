@@ -88,7 +88,6 @@ body {
     margin: 1px;
     transition: width 0.2s;
     cursor: pointer;
-    -webkit-appearance: button-bevel;
 }
 
 #slider #dots button:hover {
@@ -107,7 +106,6 @@ body {
     border-radius: 27px;
     transition: width 0.5s;
     cursor: pointer;
-    -webkit-appearance: button-bevel;
 }
 
 #slider #image-container #arrays button:active {
@@ -263,6 +261,7 @@ body {
     color: #999999;
     margin: 10px 0px;
 }
+
 #details-contact #blog .blog-section {
     margin-bottom: 20px;
 }
@@ -282,10 +281,31 @@ body {
 #shopping-new-offers-section {
     margin: auto;
     width: 920px;
+    position: relative;
 }
 
-#shopping-new-offers-image-container {
-    
+#shopping-new-offers-section #shopping-new-offers-text {
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    color: #666666;
+}
+
+#shopping-new-offers-section #shopping-new-offers-text a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    border: 3px solid #a7c353;
+    background-color: white;
+    border-radius: 7px;
+    color: #666666;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color, color 0.5s;
+}
+
+#shopping-new-offers-section #shopping-new-offers-text a:hover {
+    background-color: #a7c353;
+    color: white;
 }
 
 #shopping-description-title {
@@ -312,9 +332,12 @@ body {
     font-size: small;
 }
 
-#shopping-section header ul li a {
+#shopping-section header ul li button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #999999;
-    text-decoration: none;
+    background-color: white;
+    border: none;
+    cursor: pointer;
 }
 
 #shopping-section .shopping-products-section {
@@ -347,6 +370,7 @@ body {
     border: none;
     padding: 0px;
     cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #shopping-section .shopping-products-section .product-section .product-storage {
@@ -359,6 +383,7 @@ body {
     background-color: #a7c353;
     border: none;
     cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #shopping-section .shopping-products-section .product-section .buy-button {
@@ -369,7 +394,23 @@ body {
     margin: 20px;
     cursor: pointer;
     color: #666666;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+#shopping-consumer-info {
+    width: 920px;
+    margin: auto;
+    display: flex;
+}
+
+#shopping-consumer-info div {
+    margin: 0px auto;
+    width: 180px;
+    color: #666666;
+    line-height: 20px;
+    text-align: center;
+}
+
 #support-search-section {
     margin: auto;
     width: 920px;
