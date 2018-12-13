@@ -45,3 +45,33 @@ function previous() {
 }
 
 setInterval(next, 20000);
+
+function selectProductsCategory(i) {
+    if(i == 0) {
+        document.getElementById('smartphone-category').style = "border-bottom: solid 3px #a7c353";
+        document.getElementById('tablet-category').style = "border-bottom: none";
+        document.getElementById('tv-category').style = "border-bottom: solid none";
+        document.getElementById('wearable-category').style = "border-bottom: none";
+        document.getElementById('smartphone-products').style = "visibility: visible;";
+        document.getElementById('tablet-products').style = "visibility: hidden;";
+    }
+    if(i == 1) {
+        document.getElementById('smartphone-category').style = "border-bottom: none";
+        document.getElementById('tablet-category').style = "border-bottom: solid 3px #a7c353";
+        document.getElementById('tv-category').style = "border-bottom: none";
+        document.getElementById('wearable-category').style = "border-bottom: none";
+        document.getElementById('smartphone-products').style = "visibility: hidden;";
+        document.getElementById('tablet-products').style = "visibility: visible;";
+    }
+    if(i == 2) {
+        document.getElementById('smartphone-category').style = "border-bottom: none";
+        document.getElementById('tablet-category').style = "border-bottom: none";
+        document.getElementById('tv-category').style = "border-bottom: solid 3px #a7c353";
+        document.getElementById('wearable-category').style = "border-bottom: none";
+    }
+    if(i == 3) {document.getElementById('smartphone-category').style = "border-bottom: none";
+    document.getElementById('tablet-category').style = "border-bottom: none";
+    document.getElementById('tv-category').style = "border-bottom: none";
+    document.getElementById('wearable-category').style = "border-bottom: solid 3px #a7c353";
+    }
+}

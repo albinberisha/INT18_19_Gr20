@@ -6,6 +6,7 @@
 	<title>Shop | Samsung</title>
 	<link rel="icon" href="Icons\favicon.ico">
 	<link rel="stylesheet" href="stylesheet20.css">
+	<script src="javascript20.js"></script>
 </head>
 
 <body>
@@ -64,85 +65,161 @@
 			<header id="shopping-header">
 				<nav>
 					<ul>
-						<li style="border-bottom: solid 3px #a7c353"><button>SMARTPHONE</button></li>
-						<li><button>TABLET</button></li>
-						<li><button>TV</button></li>
-						<li><button>WEARABLE</button></li>
+						<li id="smartphone-category" style="border-bottom: solid 3px #a7c353"><button onclick="selectProductsCategory(0)">SMARTPHONE</button></li>
+						<li id="tablet-category"><button onclick="selectProductsCategory(1)">TABLET</button></li>
+						<li id="tv-category"><button onclick="selectProductsCategory(2)">TV</button></li>
+						<li id="wearable-category"><button onclick="selectProductsCategory(3)">WEARABLE</button></li>
 					</ul>
 				</nav>
 			</header>
-			<div class="shopping-products-section" style="visibility: visible;">
-				<div class="product-section">
-					<div class="product-image-container">
-						<img src="Images/note8.png" width="211px">
+			<div id="shopping-products-container" style="height: 460px;">
+				<div class="shopping-products-section" id="smartphone-products" style="visibility: visible;">
+					<div class="product-section">
+						<div class="product-image-container">
+							<img src="Images/note8.png" width="211px">
+						</div>
+						<div class="product-colors">
+							<button style="background-color: red;"></button>
+							<button style="background-color: green;"></button>
+							<button style="background-color: blue;"></button>
+						</div>
+						<h4>Galaxy Note8</h4>
+						<div class="product-storage">
+							<button>32GB</button>
+							<button>128GB</button>
+						</div>
+						<span>599,99 €</span>
+						<br />
+						<button class="buy-button">Buy It Now</button>
 					</div>
-					<div class="product-colors">
-						<button style="background-color: red;"></button>
-						<button style="background-color: green;"></button>
-						<button style="background-color: blue;"></button>
+					<div class="product-section">
+						<div class="product-image-container">
+							<img src="Images/note8.png" width="211px">
+						</div>
+						<div class="product-colors">
+							<button style="background-color: red;"></button>
+							<button style="background-color: green;"></button>
+							<button style="background-color: blue;"></button>
+						</div>
+						<h4>Galaxy Note8</h4>
+						<div class="product-storage">
+							<button>32GB</button>
+							<button>128GB</button>
+						</div>
+						<span>599,99 €</span>
+						<br />
+						<button class="buy-button">Buy It Now</button>
 					</div>
-					<h4>Galaxy Note8</h4>
-					<div class="product-storage">
-						<button>32GB</button>
-						<button>128GB</button>
+					<div class="product-section">
+						<div class="product-image-container">
+							<img src="Images/note8.png" width="211px">
+						</div>
+						<div class="product-colors">
+							<button style="background-color: red;"></button>
+							<button style="background-color: green;"></button>
+							<button style="background-color: blue;"></button>
+						</div>
+						<h4>Galaxy Note8</h4>
+						<div class="product-storage">
+							<button>32GB</button>
+							<button>128GB</button>
+						</div>
+						<span>599,99 €</span>
+						<br />
+						<button class="buy-button">Buy It Now</button>
 					</div>
-					<span>599,99 €</span>
-					<br />
-					<button class="buy-button">Buy It Now</button>
+					<div class="product-section" style="margin-right: 0px;">
+						<div class="product-image-container">
+							<img src="Images/note8.png" width="211px">
+						</div>
+						<div class="product-colors">
+							<button style="background-color: red;"></button>
+							<button style="background-color: green;"></button>
+							<button style="background-color: blue;"></button>
+						</div>
+						<h4>Galaxy Note8</h4>
+						<div class="product-storage">
+							<button>32GB</button>
+							<button>128GB</button>
+						</div>
+						<span>599,99 €</span>
+						<br />
+						<button class="buy-button">Buy It Now</button>
+					</div>
 				</div>
-				<div class="product-section">
-					<div class="product-image-container">
-						<img src="Images/note8.png" width="211px">
+				<div class="shopping-products-section" id="tablet-products" style="visibility: hidden;">
+					<div class="product-section">
+						<div class="product-image-container">
+							<img src="Images/note8.png" width="211px">
+						</div>
+						<div class="product-colors">
+							<button style="background-color: red;"></button>
+							<button style="background-color: green;"></button>
+							<button style="background-color: blue;"></button>
+						</div>
+						<h4>Galaxy Note8</h4>
+						<div class="product-storage">
+							<button>32GB</button>
+							<button>128GB</button>
+						</div>
+						<span>599,99 €</span>
+						<br />
+						<button class="buy-button">Buy It Now</button>
 					</div>
-					<div class="product-colors">
-						<button style="background-color: red;"></button>
-						<button style="background-color: green;"></button>
-						<button style="background-color: blue;"></button>
+					<div class="product-section">
+						<div class="product-image-container">
+							<img src="Images/note9.jpg" width="211px">
+						</div>
+						<div class="product-colors">
+							<button style="background-color: red;"></button>
+							<button style="background-color: green;"></button>
+							<button style="background-color: blue;"></button>
+						</div>
+						<h4>Galaxy Note8</h4>
+						<div class="product-storage">
+							<button>32GB</button>
+							<button>128GB</button>
+						</div>
+						<span>599,99 €</span>
+						<br />
+						<button class="buy-button">Buy It Now</button>
 					</div>
-					<h4>Galaxy Note8</h4>
-					<div class="product-storage">
-						<button>32GB</button>
-						<button>128GB</button>
+					<div class="product-section">
+						<div class="product-image-container">
+							<img src="Images/note8.png" width="211px">
+						</div>
+						<div class="product-colors">
+							<button style="background-color: red;"></button>
+							<button style="background-color: green;"></button>
+							<button style="background-color: blue;"></button>
+						</div>
+						<h4>Galaxy Note8</h4>
+						<div class="product-storage">
+							<button>32GB</button>
+							<button>128GB</button>
+						</div>
+						<span>599,99 €</span>
+						<br />
+						<button class="buy-button">Buy It Now</button>
 					</div>
-					<span>599,99 €</span>
-					<br />
-					<button class="buy-button">Buy It Now</button>
-				</div>
-				<div class="product-section">
-					<div class="product-image-container">
-						<img src="Images/note8.png" width="211px">
+					<div class="product-section" style="margin-right: 0px;">
+						<div class="product-image-container">
+							<img src="Images/note8.png" width="211px">
+						</div>
+						<div class="product-colors">
+							<button style="background-color: red;"></button>
+							<button style="background-color: green;"></button>
+							<button style="background-color: blue;"></button>
+						</div>
+						<h4>Galaxy Note8</h4>
+						<div class="product-storage">
+							<button>32GB</button>
+							<button>128GB</button>
+						</div>
+						<span>599,99 €</span>
+						<br />
+						<button class="buy-button">Buy It Now</button>
 					</div>
-					<div class="product-colors">
-						<button style="background-color: red;"></button>
-						<button style="background-color: green;"></button>
-						<button style="background-color: blue;"></button>
-					</div>
-					<h4>Galaxy Note8</h4>
-					<div class="product-storage">
-						<button>32GB</button>
-						<button>128GB</button>
-					</div>
-					<span>599,99 €</span>
-					<br />
-					<button class="buy-button">Buy It Now</button>
-				</div>
-				<div class="product-section" style="margin-right: 0px;">
-					<div class="product-image-container">
-						<img src="Images/note8.png" width="211px">
-					</div>
-					<div class="product-colors">
-						<button style="background-color: red;"></button>
-						<button style="background-color: green;"></button>
-						<button style="background-color: blue;"></button>
-					</div>
-					<h4>Galaxy Note8</h4>
-					<div class="product-storage">
-						<button>32GB</button>
-						<button>128GB</button>
-					</div>
-					<span>599,99 €</span>
-					<br />
-					<button class="buy-button">Buy It Now</button>
 				</div>
 			</div>
 		</div>
