@@ -54,6 +54,8 @@ function selectProductsCategory(i) {
         document.getElementById('wearable-category').style = "border-bottom: none";
         document.getElementById('smartphone-products').style = "visibility: visible;";
         document.getElementById('tablet-products').style = "visibility: hidden;";
+        document.getElementById('tv-products').style = "visibility: hidden;";
+        document.getElementById('wearable-products').style = "visibility: hidden;";
     }
     if(i == 1) {
         document.getElementById('smartphone-category').style = "border-bottom: none";
@@ -62,17 +64,27 @@ function selectProductsCategory(i) {
         document.getElementById('wearable-category').style = "border-bottom: none";
         document.getElementById('smartphone-products').style = "visibility: hidden;";
         document.getElementById('tablet-products').style = "visibility: visible;";
+        document.getElementById('tv-products').style = "visibility: hidden;";
+        document.getElementById('wearable-products').style = "visibility: hidden;";
     }
     if(i == 2) {
         document.getElementById('smartphone-category').style = "border-bottom: none";
         document.getElementById('tablet-category').style = "border-bottom: none";
         document.getElementById('tv-category').style = "border-bottom: solid 3px #a7c353";
         document.getElementById('wearable-category').style = "border-bottom: none";
+        document.getElementById('smartphone-products').style = "visibility: hidden;";
+        document.getElementById('tablet-products').style = "visibility: hidden;";
+        document.getElementById('tv-products').style = "visibility: visible;";
+        document.getElementById('wearable-products').style = "visibility: hidden;";
     }
     if(i == 3) {
         document.getElementById('smartphone-category').style = "border-bottom: none";
         document.getElementById('tablet-category').style = "border-bottom: none";
         document.getElementById('tv-category').style = "border-bottom: none";
         document.getElementById('wearable-category').style = "border-bottom: solid 3px #a7c353";
+        document.getElementById('smartphone-products').style = "visibility: hidden;";
+        document.getElementById('tablet-products').style = "visibility: hidden;";
+        document.getElementById('tv-products').style = "visibility: hidden;";
+        document.getElementById('wearable-products').style = "visibility: visible;";
     }
 }
