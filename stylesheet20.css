@@ -355,7 +355,8 @@ body {
 }
 
 #shopping-section #shopping-products-container .shopping-products-section .product-section .product-image-container {
-    margin-bottom: 30px;
+    margin: 20px auto;
+    margin-bottom: 40px;
 }
 
 #shopping-section #shopping-products-container .shopping-products-section .product-section .product-colors {

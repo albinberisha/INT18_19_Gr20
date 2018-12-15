@@ -16,6 +16,20 @@ var slider_overlays = [
     "Galaxy A9"
 ];
 
+var galaxy_note9 = [
+    "Images\\Shop\\Galaxy Note9\\Ocean Blue.png",
+    "Images\\Shop\\Galaxy Note9\\Midnight Black.png",
+    "Images\\Shop\\Galaxy Note9\\Lavender Purple.png"
+];
+
+var galaxy_s9 = [
+    "Images\\Shop\\Galaxy S9\\Coral Blue.png",
+    "Images\\Shop\\Galaxy S9\\Sunrise Gold.png",
+    "Images\\Shop\\Galaxy S9\\Midnight Black.png",
+    "Images\\Shop\\Galaxy S9\\Lilac Purple.png",
+    "Images\\Shop\\Galaxy S9\\Titanium Grey.png"
+];
+
 function select(i) {
     var image = document.getElementById('slider-image');
     var overlay_name = document.getElementById('overlay-title');
@@ -28,7 +42,7 @@ function next() {
     var image = document.getElementById('slider-image');
     var overlay_name = document.getElementById('overlay-title');
     image_index++;
-    if(image_index > 4)
+    if (image_index > 4)
         image_index = 0;
     image.src = slider_images[image_index];
     overlay_name.innerHTML = slider_overlays[image_index];
@@ -38,7 +52,7 @@ function previous() {
     var image = document.getElementById('slider-image');
     var overlay_name = document.getElementById('overlay-title');
     image_index--;
-    if(image_index < 0)
+    if (image_index < 0)
         image_index = 4;
     image.src = slider_images[image_index];
     overlay_name.innerHTML = slider_overlays[image_index];
@@ -47,7 +61,7 @@ function previous() {
 setInterval(next, 20000);
 
 function selectProductsCategory(i) {
-    if(i == 0) {
+    if (i == 0) {
         document.getElementById('smartphone-category').style = "border-bottom: solid 3px #a7c353";
         document.getElementById('tablet-category').style = "border-bottom: none";
         document.getElementById('tv-category').style = "border-bottom: solid none";
@@ -57,7 +71,7 @@ function selectProductsCategory(i) {
         document.getElementById('tv-products').style = "visibility: hidden;";
         document.getElementById('wearable-products').style = "visibility: hidden;";
     }
-    if(i == 1) {
+    if (i == 1) {
         document.getElementById('smartphone-category').style = "border-bottom: none";
         document.getElementById('tablet-category').style = "border-bottom: solid 3px #a7c353";
         document.getElementById('tv-category').style = "border-bottom: none";
@@ -67,7 +81,7 @@ function selectProductsCategory(i) {
         document.getElementById('tv-products').style = "visibility: hidden;";
         document.getElementById('wearable-products').style = "visibility: hidden;";
     }
-    if(i == 2) {
+    if (i == 2) {
         document.getElementById('smartphone-category').style = "border-bottom: none";
         document.getElementById('tablet-category').style = "border-bottom: none";
         document.getElementById('tv-category').style = "border-bottom: solid 3px #a7c353";
@@ -77,7 +91,7 @@ function selectProductsCategory(i) {
         document.getElementById('tv-products').style = "visibility: visible;";
         document.getElementById('wearable-products').style = "visibility: hidden;";
     }
-    if(i == 3) {
+    if (i == 3) {
         document.getElementById('smartphone-category').style = "border-bottom: none";
         document.getElementById('tablet-category').style = "border-bottom: none";
         document.getElementById('tv-category').style = "border-bottom: none";
@@ -87,4 +101,8 @@ function selectProductsCategory(i) {
         document.getElementById('tv-products').style = "visibility: hidden;";
         document.getElementById('wearable-products').style = "visibility: visible;";
     }
+}
+
+function selectProductColor(i, colors, id) {
+    document.getElementById(id).src = colors[i];
 }
