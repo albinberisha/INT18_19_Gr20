@@ -357,6 +357,16 @@ body {
 #shopping-section #shopping-products-container .shopping-products-section .product-section .product-image-container {
     margin: 20px auto;
     margin-bottom: 40px;
+    width: 210px;
+}
+
+#shopping-section #shopping-products-container .shopping-products-section .product-section .product-image-container img {
+    transition: transform 0.5s;
+    height: 140px;
+}
+
+#shopping-section #shopping-products-container .shopping-products-section .product-section .product-image-container img:hover {
+    transform: scale(1.2);
 }
 
 #shopping-section #shopping-products-container .shopping-products-section .product-section .product-colors {

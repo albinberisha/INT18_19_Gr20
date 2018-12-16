@@ -1,11 +1,11 @@
 var image_index = 0;
 
 var slider_images = [
-    "Images\\Be Together.png",
-    "Images\\Galaxy Note9.jpg",
-    "Images\\The Frame TV.jpg",
-    "Images\\Galaxy Watch.jpg",
-    "Images\\Galaxy A9 quad.jpg"
+    "Images/Be Together.png",
+    "Images/Galaxy Note9.jpg",
+    "Images/The Frame TV.jpg",
+    "Images/Galaxy Watch.jpg",
+    "Images/Galaxy A9 quad.jpg"
 ];
 
 var slider_overlays = [
@@ -17,17 +17,29 @@ var slider_overlays = [
 ];
 
 var galaxy_note9 = [
-    "Images\\Shop\\Galaxy Note9\\Ocean Blue.png",
-    "Images\\Shop\\Galaxy Note9\\Midnight Black.png",
-    "Images\\Shop\\Galaxy Note9\\Lavender Purple.png"
+    "Images/Shop/Galaxy Note9/Ocean Blue.png",
+    "Images/Shop/Galaxy Note9/Midnight Black.png",
+    "Images/Shop/Galaxy Note9/Lavender Purple.png"
+];
+
+var galaxy_s9_plus = [
+    "Images/Shop/Galaxy S9+/Coral Blue.png",
+    "Images/Shop/Galaxy S9+/Sunrise Gold.png",
+    "Images/Shop/Galaxy S9+/Midnight Black.png",
+    "Images/Shop/Galaxy S9+/Lilac Purple.png",
+    "Images/Shop/Galaxy S9+/Titanium Grey.png"
 ];
 
 var galaxy_s9 = [
-    "Images\\Shop\\Galaxy S9\\Coral Blue.png",
-    "Images\\Shop\\Galaxy S9\\Sunrise Gold.png",
-    "Images\\Shop\\Galaxy S9\\Midnight Black.png",
-    "Images\\Shop\\Galaxy S9\\Lilac Purple.png",
-    "Images\\Shop\\Galaxy S9\\Titanium Grey.png"
+    "Images/Shop/Galaxy S9/Coral Blue.png",
+    "Images/Shop/Galaxy S9/Midnight Black.png",
+    "Images/Shop/Galaxy S9/Lilac Purple.png",
+    "Images/Shop/Galaxy S9/Titanium Grey.png"
+];
+
+var galaxy_note8 = [
+    "Images/Shop/Galaxy Note8/Midnight Black.png",
+    "Images/Shop/Galaxy Note8/Maple Gold.png"
 ];
 
 function select(i) {
