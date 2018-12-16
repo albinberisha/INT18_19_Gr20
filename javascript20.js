@@ -48,6 +48,12 @@ function select(i) {
     image_index = i;
     image.src = slider_images[image_index];
     overlay_name.innerHTML = slider_overlays[image_index];
+    for(var j = 0; j <= 4; j++) {
+        if(i == j)
+            document.getElementById('dots').getElementsByTagName('button')[j].style = "background-color: white;";
+        else
+            document.getElementById('dots').getElementsByTagName('button')[j].style = "background-color: #a7c353;";
+    }
 }
 
 function next() {
@@ -58,6 +64,12 @@ function next() {
         image_index = 0;
     image.src = slider_images[image_index];
     overlay_name.innerHTML = slider_overlays[image_index];
+    for(var j = 0; j <= 4; j++) {
+        if(image_index == j)
+            document.getElementById('dots').getElementsByTagName('button')[j].style = "background-color: white;";
+        else
+            document.getElementById('dots').getElementsByTagName('button')[j].style = "background-color: #a7c353;";
+    }
 }
 
 function previous() {
@@ -68,6 +80,12 @@ function previous() {
         image_index = 4;
     image.src = slider_images[image_index];
     overlay_name.innerHTML = slider_overlays[image_index];
+    for(var j = 0; j <= 4; j++) {
+        if(image_index == j)
+            document.getElementById('dots').getElementsByTagName('button')[j].style = "background-color: white;";
+        else
+            document.getElementById('dots').getElementsByTagName('button')[j].style = "background-color: #a7c353;";
+    }
 }
 
 setInterval(next, 20000);
@@ -117,4 +135,36 @@ function selectProductsCategory(i) {
 
 function selectProductColor(i, colors, id) {
     document.getElementById(id).src = colors[i];
+    if(id == 'galaxy-note9-image') {
+        for(var j = 0; j < colors.length; j++) {
+            if(i == j)
+                document.getElementsByClassName('product-colors')[0].getElementsByTagName('button')[j].style.backgroundColor = "white";
+            else
+                document.getElementsByClassName('product-colors')[0].getElementsByTagName('button')[j].style.backgroundColor = document.getElementsByClassName('product-colors')[0].getElementsByTagName('button')[j].style.borderColor;
+        }
+    }
+    if(id == 'galaxy-s9-plus-image') {
+        for(var j = 0; j < colors.length; j++) {
+            if(i == j)
+                document.getElementsByClassName('product-colors')[1].getElementsByTagName('button')[j].style.backgroundColor = "white";
+            else
+                document.getElementsByClassName('product-colors')[1].getElementsByTagName('button')[j].style.backgroundColor = document.getElementsByClassName('product-colors')[1].getElementsByTagName('button')[j].style.borderColor;
+        }
+    }
+    if(id == 'galaxy-s9-image') {
+        for(var j = 0; j < colors.length; j++) {
+            if(i == j)
+                document.getElementsByClassName('product-colors')[2].getElementsByTagName('button')[j].style.backgroundColor = "white";
+            else
+                document.getElementsByClassName('product-colors')[2].getElementsByTagName('button')[j].style.backgroundColor = document.getElementsByClassName('product-colors')[2].getElementsByTagName('button')[j].style.borderColor;
+        }
+    }
+    if(id == 'galaxy-note8-image') {
+        for(var j = 0; j < colors.length; j++) {
+            if(i == j)
+                document.getElementsByClassName('product-colors')[3].getElementsByTagName('button')[j].style.backgroundColor = "white";
+            else
+                document.getElementsByClassName('product-colors')[3].getElementsByTagName('button')[j].style.backgroundColor = document.getElementsByClassName('product-colors')[3].getElementsByTagName('button')[j].style.borderColor;
+        }
+    }
 }
