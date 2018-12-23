@@ -2,34 +2,75 @@
 <html>
 
 <head>
-		
+	<meta charset="utf-8">
+	<title>Products | Samsung</title>
+	<link rel="icon" href="Icons\favicon.ico">
+	<link rel="stylesheet" href="stylesheet20.css">
+	<script src="Game Script.js"></script>
+</head>
 
-		<meta charset="utf-8">
-		<title>Products | Samsung</title>
-		<link rel="icon" href="Icons\favicon.ico">
-		<link rel="stylesheet" href="stylesheet20.css">
-	</head>
-	
-	<body>
-		<div id="main">
-			<header id="main-header">
-				<div id="title">
-					<h1 style="margin: 0px; font-variant: small-caps; color: #666666; font-weight: normal; line-height: 32px; font-size: 32px;">Samsung</h1>
-					<h6 style="margin: 0px; color: #999999; font-weight: normal; line-height: 12px; font-size: 12px;">#DoWhatYouCant</h6>
-				</div>
-				<nav>
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li style="background-color: #a7c353;"><a href="Products.html" style="color: white;">PRODUCTS</a></li>
-						<li><a href="Shop.html">SHOP</a></li>
-						<li><a href="Gallery.html">GALLERY</a></li>
-						<li> <a href="SUPPORT.html">SUPPORT</a></li>
+<body onload="start()">
+	<div id="main">
+		<header id="main-header">
+			<div id="title">
+				<h1 style="margin: 0px; font-variant: small-caps; color: #666666; font-weight: normal; line-height: 32px; font-size: 32px;">Samsung</h1>
+				<h6 style="margin: 0px; color: #999999; font-weight: normal; line-height: 12px; font-size: 12px;">#DoWhatYouCant</h6>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li style="background-color: #a7c353;"><a href="Products.html" style="color: white;">PRODUCTS</a></li>
+					<li><a href="Shop.html">SHOP</a></li>
+					<li><a href="Gallery.html">GALLERY</a></li>
+					<li> <a href="SUPPORT.html">SUPPORT</a></li>
 				</ul>
 			</nav>
 		</header>
 		<hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;" />
+		<div id="products-main-container">
+			<div id="galaxy-note9" class="products-product-section">
+				<header class="product-menu-header">
+					<nav>
+						<ul>
+							<li style="border-bottom: 2px solid #a7c353;">
+								<button>HIGHLIGHTS</button>
+							</li>
+							<li>
+								<button>PERFORMANCE</button>
+							</li>
+							<li>
+								<button>DESIGN</button>
+							</li>
+							<li>
+								<button>SPECS</button>
+							</li>
+							<li>
+								<button>FLAPPY BIRD</button>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				<div id="highlights">
 
+				</div>
+				<div id="performance">
+
+				</div>
+				<div id="design">
+
+				</div>
+				<div id="specs">
+
+				</div>
+				<div id="game">
+					<div id="game-container" style="width: 270px; height: 555px; margin: auto;">
+						<canvas id="game-canvas" width="270px" height="555px"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+
 	<div id="details-contact">
 		<div id="details" class="details-section">
 			<span class="details-title">Company Details</span>
@@ -79,7 +120,7 @@
 				</div>
 				<a href="https://www.twitter.com">Keep up with our Tweets</a>
 			</div>
-			
+
 
 			<hr class="social-hr" />
 			<div class="social-section">
@@ -90,15 +131,15 @@
 			</div>
 			<hr class="social-hr" />
 			<div class="social-section">
-				
-						<div class="social-SVG-container">
-					
-							
-						<img src="SVGs/icon-rss.svg">
+
+				<div class="social-SVG-container">
+
+
+					<img src="SVGs/icon-rss.svg">
 				</div>
 				<a href="https://www.rss.com">RSS Feed</a>
 			</div>
-			
+
 			<hr class="social-hr" />
 		</div>
 
@@ -109,7 +150,7 @@
 				<h6 class="blog-section-title"> Blog Post Title</h6>
 
 				<p style="font-size: 11px; line-height: 13px; color: #999999; margin: 5px 0px;">
-					 Posted by Admin on 00.00.0000</p>
+					Posted by Admin on 00.00.0000</p>
 
 				<p style="font-size: 12px; line-height: 19px; color: #999999; margin: 5px 0px;">
 					Vestibulumaccumsan egestibulum eu

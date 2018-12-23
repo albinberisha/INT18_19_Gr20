@@ -458,3 +458,32 @@ body {
     top: 0px;
     right: 0px;
 }
+
+#products-main-container .products-product-section {
+    margin: auto;
+    width: 960px;
+}
+
+#products-main-container .products-product-section .product-menu-header {
+    margin: auto;
+    background-color: #383838;
+}
+
+#products-main-container .products-product-section .product-menu-header nav ul {
+    width: max-content;
+    padding: 20px 0px;
+    margin: auto;
+}
+
+#products-main-container .products-product-section .product-menu-header nav ul li {
+    display: inline-block;
+}
+
+#products-main-container .products-product-section .product-menu-header nav ul li button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #313131;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
