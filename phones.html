@@ -1,336 +1,260 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Clearcut - Gallery</title>
-        <link rel="stylesheet" href="stylesheet20.css" type="text/css">
-    </head>
-    <body>
-        <div id="main">
-            <div id="header">
-                <div id="title">
-                    <h1 style="margin: 0px; font-variant: small-caps; color: #666666; font-weight: normal; line-height: 32px; font-size: 32px;">Sport</h1>
-                    <h6 style="margin: 0px; color: #999999; font-weight: normal; line-height: 12px; font-size: 12px;">All About Sport</h6>
-                </div>
-                <div id="navigation">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="#">SOMETHING</a></li>
-                        <li><a href="#">ELSE</a></li>
-                         <li><a href="Gallery.html">GALLERY</a></li>
-                         <li style="background-color: #a7c353;"><a href="#"  style="color: white;">SMARTPHONES</a></li>
-                        
-                         <hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;" />
-                        
-                         <div id="support-search-section">
-                            
-                            <div id="support-search-form-container">
-                               
-                                <h1 style="font-size: 40px; line-height: 60px; color: #666666; text-align: center; margin: 0px; padding: 0px; top: 50px;">We're
-                                     here to help</h1>
-                               
-                                     <br />
-                                 
-                                     <form action="https://www.google.com/">
-                                   
-                                        <fieldset style="border: solid 0.5px; border-color: #999999; padding: 2px; display: inline-table; border-radius: 2px;">
-                                      
-                                            <input type="text" placeholder="Enter Keyword" style="border: none; width: 300px; height: 30px; padding: 0px 10px; font-size: 15px; font-family: Georgia, 'Times New Roman', Times, serif; color: #666666;">
-                                        
-                                            <button style="border: none; padding: 0px; margin: 0px 5px; background-color: white; display: table-cell; cursor: pointer;">
-                                           
-                                        
-                                                <img src="SVGs/Search Icon.svg" width="20px" style="vertical-align: middle;">
-                                                
-                                                <div id="shopping-products-container" style="height: 500px;">
-                                                   '
-                                                   ' <div class="shopping-products-section" id="smartphone-products" style="visibility: visible;">
-                                                      
-                                                    <div class="product-section" id="galaxy-note9">
-                                                          
-                                                        <div class="product-image-container">
-                                                              
-                                                            <img id="galaxy-note9-image" src="Images/Shop/Galaxy Note9/Ocean Blue.png">
-                                                            </div>
-                                                           
-                                                            <div class="product-colors">
-                                                                <button onclick="selectProductColor(0, galaxy_note9, 'galaxy-note9-image')" style="background-color: white; border-color: rgb(69, 110, 224)"></button>
-                                                                <button onclick="selectProductColor(1, galaxy_note9, 'galaxy-note9-image')" style="background-color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"></button>
-                                                                <button onclick="selectProductColor(2, galaxy_note9, 'galaxy-note9-image')" style="background-color: rgb(215, 150, 252); border-color: rgb(215, 150, 252);"></button>
-                                                            </div>
-                                                       
-                                                            <h4>Galaxy Note9</h4>
-                                                            
-                                                            <div class="product-storage">
-                                                                <button>32GB</button>
-                                                              
-                                                                <button>128GB</button>
-                                                           
-                                                            </div>
-                                                           
-                                                            <span>999,99 €</span>
-                                                            <br />
-                                                            <button class="buy-button">Buy It Now</button>
-                                                      
-                                                        </div>
-                                                        <div class="product-section">
-                                                            <div class="product-image-container">
-                                                                <img id="galaxy-s9-plus-image" src="Images/Shop/Galaxy S9+/Coral Blue.png">
-                                                            </div>
-                                                            <div class="product-colors">
-                                                                <button onclick="selectProductColor(0, galaxy_s9_plus, 'galaxy-s9-plus-image')" style="background-color: white; border-color: rgb(69, 110, 224);"></button>
-                                                                <button onclick="selectProductColor(1, galaxy_s9_plus, 'galaxy-s9-plus-image')" style="background-color: rgb(218, 185, 168); border-color: rgb(218, 185, 168);"></button>
-                                                                <button onclick="selectProductColor(2, galaxy_s9_plus, 'galaxy-s9-plus-image')" style="background-color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"></button>
-                                                                <button onclick="selectProductColor(3, galaxy_s9_plus, 'galaxy-s9-plus-image')" style="background-color: rgb(215, 150, 252); border-color: rgb(215, 150, 252);"></button>
-                                                                <button onclick="selectProductColor(4, galaxy_s9_plus, 'galaxy-s9-plus-image')" style="background-color: rgb(152, 152, 152); border-color: rgb(152, 152, 152);"></button>
-                                                            </div>
-                                                            <h4>Galaxy S9+</h4>
-                                                            <div class="product-storage">
-                                                                <button>32GB</button>
-                                                                <button>128GB</button>
-                                                            </div>
-                                                            <span>949,99 €</span>
-                                                            <br />
-                                                            <button class="buy-button">Buy It Now</button>
-                                                        </div>
-                                         </button>
-                                     </fieldset>
-                                 </form>
-                             </div>
-                 
-                             <div id="support-search-image-container">
-                                 <img src="Images/Support Image.png" width="569px" />
-                 
-                             </div>
-                         </div>
-                     </div>
 
-                    </ul>
+<head>
+    <meta charset="utf-8">
+    <title>Clearcut - Gallery</title>
+    <link rel="stylesheet" href="stylesheet20.css" type="text/css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="title">
+                <h1 style="margin: 0px; font-variant: small-caps; color: #666666; font-weight: normal; line-height: 32px; font-size: 32px;">Sport</h1>
+                <h6 style="margin: 0px; color: #999999; font-weight: normal; line-height: 12px; font-size: 12px;">All
+                    About Sport</h6>
+            </div>
+            <div id="navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">SOMETHING</a></li>
+                    <li><a href="#">ELSE</a></li>
+                    <li><a href="Gallery.html">GALLERY</a></li>
+                    <li style="background-color: #a7c353;"><a href="#" style="color: white;">SMARTPHONES</a></li>
+                </ul>
+
+                <hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;" />
+
+                <div id="support-search-section">
+                    <div id="support-search-form-container">
+                        <h1 style="font-size: 40px; line-height: 60px; color: #666666; text-align: center; margin: 0px; padding: 0px; top: 50px;">We'rehere to help</h1>
+                        <br />
+                        <form action="https://www.google.com/">
+                            <fieldset style="border: solid 0.5px; border-color: #999999; padding: 2px; display: inline-table; border-radius: 2px;">
+                                <input type="text" placeholder="Enter Keyword" style="border: none; width: 300px; height: 30px; padding: 0px 10px; font-size: 15px; font-family: Georgia, 'Times New Roman', Times, serif; color: #666666;">
+                                <button style="border: none; padding: 0px; margin: 0px 5px; background-color: white; display: table-cell; cursor: pointer;">
+                                    <img src="SVGs/Search Icon.svg" width="20px" style="vertical-align: middle;">
+                                    <div id="shopping-products-container" style="height: 500px;">
+                                        <div class="shopping-products-section" id="smartphone-products" style="visibility: visible;">
+                                            <div class="product-section" id="galaxy-note9">
+                                                <div class="product-image-container">
+                                                    <img id="galaxy-note9-image" src="Images/Shop/Galaxy Note9/Ocean Blue.png">
+                                                </div>
+                                                <div class="product-colors">
+                                                    <button onclick="selectProductColor(0, galaxy_note9, 'galaxy-note9-image')"
+                                                        style="background-color: white; border-color: rgb(69, 110, 224)"></button>
+                                                    <button onclick="selectProductColor(1, galaxy_note9, 'galaxy-note9-image')"
+                                                        style="background-color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"></button>
+                                                    <button onclick="selectProductColor(2, galaxy_note9, 'galaxy-note9-image')"
+                                                        style="background-color: rgb(215, 150, 252); border-color: rgb(215, 150, 252);"></button>
+                                                </div>
+                                                <h4>Galaxy Note9</h4>
+                                                <div class="product-storage">
+                                                    <button>32GB</button>
+                                                    <button>128GB</button>
+                                                </div>
+                                                <span>999,99 €</span>
+                                                <br />
+                                                <button class="buy-button">Buy It Now</button>
+                                            </div>
+                                            <div class="product-section">
+                                                <div class="product-image-container">
+                                                    <img id="galaxy-s9-plus-image" src="Images/Shop/Galaxy S9+/Coral Blue.png">
+                                                </div>
+                                                <div class="product-colors">
+                                                    <button onclick="selectProductColor(0, galaxy_s9_plus, 'galaxy-s9-plus-image')"
+                                                        style="background-color: white; border-color: rgb(69, 110, 224);"></button>
+                                                    <button onclick="selectProductColor(1, galaxy_s9_plus, 'galaxy-s9-plus-image')"
+                                                        style="background-color: rgb(218, 185, 168); border-color: rgb(218, 185, 168);"></button>
+                                                    <button onclick="selectProductColor(2, galaxy_s9_plus, 'galaxy-s9-plus-image')"
+                                                        style="background-color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"></button>
+                                                    <button onclick="selectProductColor(3, galaxy_s9_plus, 'galaxy-s9-plus-image')"
+                                                        style="background-color: rgb(215, 150, 252); border-color: rgb(215, 150, 252);"></button>
+                                                    <button onclick="selectProductColor(4, galaxy_s9_plus, 'galaxy-s9-plus-image')"
+                                                        style="background-color: rgb(152, 152, 152); border-color: rgb(152, 152, 152);"></button>
+                                                </div>
+                                                <h4>Galaxy S9+</h4>
+                                                <div class="product-storage">
+                                                    <button>32GB</button>
+                                                    <button>128GB</button>
+                                                </div>
+                                                <span>949,99 €</span>
+                                                <br />
+                                                <button class="buy-button">Buy It Now</button>
+                                            </div>
+                                </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div id="support-search-image-container">
+                        <img src="Images/Support Image.png" width="569px" />
+                    </div>
                 </div>
             </div>
-            <hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #e2e2e2; margin: 40px auto;" />
-        
-            <div id="shopping-consumer-info">
-        
-                <div>
-                
-                    <img src="Images/Free Delivery.png" width="60px" style="margin: 0px 70px;">
-            
-                    <span>Free next day delivery on all orders</span>
-            
-                </div>
-            
-                <div>
-            
-                    <img src="Images/Free Return.png" width="60px" style="margin: 0px 70px;">
-                
-                    <span>Free returns</span>
-			</div>
-			<div>
-				<img src="Images/Change Of Mind.png" width="60px" style="margin: 0px 70px;">
-				<span>28 day change of mind</span>
-			</div>
-			<div>
-				<img src="Images/Parcel Tracking.png" width="60px" style="margin: 0px 70px;">
-				<span>24/7 parcel tracking</span>
-			</div>
-		</div>
-		<hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #e2e2e2; margin: 40px auto;" />
-		<div id="shopping-description-title">
-			<h1>Top Picks</h1>
-		</div>
-           
-            <div class="product-colors">
-               
-                <button style="background-color: red;"></button>
-               
-                <button style="background-color: green;"></button>
-               
-                <button style="background-color: blue;"></button>
-           
-            </div>
-            <h4>Galaxy Note8</h4>
-           
-            <div class="product-storage">
-               
-                <button>32GB</button>
-                
-                <button>128GB</button>
-           
-            </div>
-            
-            <span>599,99 €</span>
-            <br />
-            <button class="buy-button">Buy It Now</button>
+            </ul>
         </div>
-       
-        <div class="product-section">
-          
-            <div class="product-image-container">
-              
-                <img src="Images/note8.png">
-            </div>
-            
-            <div class="product-colors">
-               
-                <button style="background-color: red;"></button>
-              
-                <button style="background-color: green;"></button>
-               
-                <button style="background-color: blue;"></button>
-            </div>
-            </section>
-           
-            <div class="product-colors">
-                <button onclick="selectProductColor(0, galaxy_s9, 'galaxy-s9-image')" style="background-color: white; border-color: rgb(69, 110, 224);"></button>
-                <button onclick="selectProductColor(1, galaxy_s9, 'galaxy-s9-image')" style="background-color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"></button>
-                <button onclick="selectProductColor(2, galaxy_s9, 'galaxy-s9-image')" style="background-color: rgb(215, 150, 252); border-color: rgb(215, 150, 252);"></button>
-                <button onclick="selectProductColor(3, galaxy_s9, 'galaxy-s9-image')" style="background-color: rgb(152, 152, 152); border-color: rgb(152, 152, 152);"></button>
-            </div>
-          
-            <h4>Galaxy S9</h4>
-            <div class="product-storage">
-               
-                <button>32GB</button>
-                
-                <button>128GB</button>
-          
-            </div>
-           
-            <span>849,99 €</span>
-            
-            <br />
-            
-            <button class="buy-button">Buy It Now</button>
-        
-        
+    </div>
+    <hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #e2e2e2; margin: 40px auto;" />
+    <div id="shopping-consumer-info">
+        <div>
+            <img src="Images/Free Delivery.png" width="60px" style="margin: 0px 70px;">
+            <span>Free next day delivery on all orders</span>
         </div>
-        <div class="product-section" style="margin-right: 0px;">
-         
-            <div class="product-image-container">
-              
-                <img id="galaxy-note8-image" src="Images/Shop/Galaxy Note8/Midnight Black.png">
-          
-            </div>
-            
-            <div class="product-colors">
-                <button onclick="selectProductColor(0, galaxy_note8, 'galaxy-note8-image')" style="background-color: white; border-color: rgb(0, 0, 0);"></button>
-                <button onclick="selectProductColor(1, galaxy_note8, 'galaxy-note8-image')" style="background-color: rgb(202, 185, 161); border-color: rgb(202, 185, 161);"></button>
-            </div>
-            <h4>Galaxy Note8</h4>
-           
+        <div>
+            <img src="Images/Free Return.png" width="60px" style="margin: 0px 70px;">
+            <span>Free returns</span>
+        </div>
+        <div>
+            <img src="Images/Change Of Mind.png" width="60px" style="margin: 0px 70px;">
+            <span>28 day change of mind</span>
+        </div>
+        <div>
+            <img src="Images/Parcel Tracking.png" width="60px" style="margin: 0px 70px;">
+            <span>24/7 parcel tracking</span>
+        </div>
+    </div>
+    <hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #e2e2e2; margin: 40px auto;" />
+    <div id="shopping-description-title">
+        <h1>Top Picks</h1>
+    </div>
+    <div class="product-colors">
+        <button style="background-color: red;"></button>
+        <button style="background-color: green;"></button>
+        <button style="background-color: blue;"></button>
+    </div>
+    <h4>Galaxy Note8</h4>
+    <div class="product-storage">
+        <button>32GB</button>
+        <button>128GB</button>
+    </div>
+    <span>599,99 €</span>
+    <br />
+    <button class="buy-button">Buy It Now</button>
+    </div>
+    <div class="product-section">
+        <div class="product-image-container">
+            <img src="Images/note8.png">
+        </div>
+        <div class="product-colors">
+            <button style="background-color: red;"></button>
+            <button style="background-color: green;"></button>
+            <button style="background-color: blue;"></button>
+        </div>
+        </section>
+        <div class="product-colors">
+            <button onclick="selectProductColor(0, galaxy_s9, 'galaxy-s9-image')" style="background-color: white; border-color: rgb(69, 110, 224);"></button>
+            <button onclick="selectProductColor(1, galaxy_s9, 'galaxy-s9-image')" style="background-color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"></button>
+            <button onclick="selectProductColor(2, galaxy_s9, 'galaxy-s9-image')" style="background-color: rgb(215, 150, 252); border-color: rgb(215, 150, 252);"></button>
+            <button onclick="selectProductColor(3, galaxy_s9, 'galaxy-s9-image')" style="background-color: rgb(152, 152, 152); border-color: rgb(152, 152, 152);"></button>
+        </div>
+        <h4>Galaxy S9</h4>
+        <div class="product-storage">
+            <button>32GB</button>
+            <button>128GB</button>
+        </div>
+        <span>849,99 €</span>
+        <br />
+        <button class="buy-button">Buy It Now</button>
+    </div>
+    <div class="product-section" style="margin-right: 0px;">
+        <div class="product-image-container">
+            <img id="galaxy-note8-image" src="Images/Shop/Galaxy Note8/Midnight Black.png">
+        </div>
+        <div class="product-colors">
+            <button onclick="selectProductColor(0, galaxy_note8, 'galaxy-note8-image')" style="background-color: white; border-color: rgb(0, 0, 0);"></button>
+            <button onclick="selectProductColor(1, galaxy_note8, 'galaxy-note8-image')" style="background-color: rgb(202, 185, 161); border-color: rgb(202, 185, 161);"></button>
+        </div>
+        <h4>Galaxy Note8</h4>
     </div>
     <div class="shopping-products-section" id="tablet-products" style="visibility: hidden;">
         <div class="product-section">
             <div class="product-image-container">
                 <img src="Images/note8.png">
             </div>
-                <hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;"/>
-            </div>
+            <hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;" />
+        </div>
         <div id="details-contact">
-          <div id="details" class="details-section">
-            <span class="details-title">Company Details</span>
-            <hr/>
-            <span>Company Name</span>
-            <br/>
-            <span>Street Name & Number</span>
-            <br/>
-            <span>Town</span>
-            <br/>
-            <span>Postcode/Zip</span>
-            <br/>
-            <br/>
-            <span>Tel: xxxxx xxxxxxxxxx</span>
-            <br/>
-            <span>Fax: xxxxx xxxxxxxxxx</span>
-            <br/>
-            <span>Email: contact@mydomain.com</span>
-            <br/>
-            <br/>
-            <span>Officr Hours</span>
-            <br/>
-            <span>Monday - Friday: 08:00 - 17:30</span>
-            <br/>
-            <span>Saturday: 08:00 - 13:00</span>
-            <br/>
-          </div>
-    
-          <div id="social" class="details-section">
-            <span class="details-title">Stay Social</span>
-            <hr/>
-            <div class="social-section">
-                <div class="social-SVG-container">
-                    <img src="SVGs/icon-linkedin.svg">
-                </div>
-               
-                <a href="https://www.linkedin.com"  >Get linked up in LinkedIn</a>
-            
+            <div id="details" class="details-section">
+                <span class="details-title">Company Details</span>
+                <hr />
+                <span>Company Name</span>
+                <br />
+                <span>Street Name & Number</span>
+                <br />
+                <span>Town</span>
+                <br />
+                <span>Postcode/Zip</span>
+                <br />
+                <br />
+                <span>Tel: xxxxx xxxxxxxxxx</span>
+                <br />
+                <span>Fax: xxxxx xxxxxxxxxx</span>
+                <br />
+                <span>Email: contact@mydomain.com</span>
+                <br />
+                <br />
+                <span>Officr Hours</span>
+                <br />
+                <span>Monday - Friday: 08:00 - 17:30</span>
+                <br />
+                <span>Saturday: 08:00 - 13:00</span>
+                <br />
             </div>
-           
-            <hr class="social-hr"/>
-            
-            <div class="social-section">
-                <div class="social-SVG-container">
-                    <img src="SVGs/icon-twitter.svg">
+            <div id="social" class="details-section">
+                <span class="details-title">Stay Social</span>
+                <hr />
+                <div class="social-section">
+                    <div class="social-SVG-container">
+                        <img src="SVGs/icon-linkedin.svg">
+                    </div>
+                    <a href="https://www.linkedin.com">Get linked up in LinkedIn</a>
                 </div>
-                <a href="https://www.twitter.com"> Keep up with our Tweets</a>
-            </div>
-           
-            <hr class="social-hr"/>
-           
-            <div class="social-section">
-                <div class="social-SVG-container">
-                    <img src="SVGs/icon-pinterest.svg">
-               
+                <hr class="social-hr" />
+                <div class="social-section">
+                    <div class="social-SVG-container">
+                        <img src="SVGs/icon-twitter.svg">
+                    </div>
+                    <a href="https://www.twitter.com"> Keep up with our Tweets</a>
                 </div>
-                
-                <a href="https://www.pinterest.com">Photos on Pinterest</a>
-            
-            </div>
-           
-            <hr class="social-hr"/>
-            
-            <div class="social-section">
-                <div class="social-SVG-container">
-                    <img src="SVGs/icon-rss.svg">
+                <hr class="social-hr" />
+                <div class="social-section">
+                    <div class="social-SVG-container">
+                        <img src="SVGs/icon-pinterest.svg">
+                    </div>
+                    <a href="https://www.pinterest.com">Photos on Pinterest</a>
                 </div>
-                <a href="https://www.rss.com">RSS Feed</a>
+                <hr class="social-hr" />
+                <div class="social-section">
+                    <div class="social-SVG-container">
+                        <img src="SVGs/icon-rss.svg">
+                    </div>
+                    <a href="https://www.rss.com">RSS Feed</a>
+                </div>
+                <hr class="social-hr" />
             </div>
-            <hr class="social-hr"/>
-          </div>
-          
-          <div id="blog" class="details-section">
-            <span class="details-title">From The Blog</span>
-            <hr/>
-         
+            <div id="blog" class="details-section">
+                <span class="details-title">From The Blog</span>
+                <hr />
+            </div>
+            <div id="contact" class="details-section" style="padding-right: 0px;">
+                <span class="details-title">Contact Us</span>
+                <hr />
+                <form>
+                    <input name="name" placeholder="Name" type="text" required style="border: none; border-radius: 7px; margin-bottom: 10px; background-color: #383838; width: 215px; height: 31px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white;">
+                    <br />
+                    <input name="email" placeholder="Email" type="email" required style="border: none; border-radius: 7px; margin-bottom: 10px; background-color: #383838; width: 215px; height: 31px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white;">
+                    <br />
+                    <textarea name="message" placeholder="Message" required style="border: none; border-radius: 7px; margin-bottom: 4px; background-color: #383838; width: 215px; height: 110px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white; resize: none;"></textarea>
+                    <input type="submit" value="SUBMIT" style="border: none; background-color: #a7c353; width: 80px; height: 31px; border-radius: 7px; color: #313131; padding: 0px; font-size: 13px; line-height: 21px;">
+                </form>
+            </div>
         </div>
-          
-          
-          <div id="contact" class="details-section" style="padding-right: 0px;">
-           
-            <span class="details-title">Contact Us</span>
-           
-           
-            <hr/>
-            
-            <form>
-              <input name="name" placeholder="Name" type="text" required style="border: none; border-radius: 7px; margin-bottom: 10px; background-color: #383838; width: 215px; height: 31px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white;">
-              
-              <br/>
-              
-              <input name="email" placeholder="Email" type="email" required style="border: none; border-radius: 7px; margin-bottom: 10px; background-color: #383838; width: 215px; height: 31px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white;">
-              <br/>
-              <textarea name="message" placeholder="Message" required style="border: none; border-radius: 7px; margin-bottom: 4px; background-color: #383838; width: 215px; height: 110px; padding: 0px; font-size: 13px; line-height: 21px; padding-left: 10px; color: white; resize: none;"></textarea>
-              <input type="submit" value="SUBMIT" style="border: none; background-color: #a7c353; width: 80px; height: 31px; border-radius: 7px; color: #313131; padding: 0px; font-size: 13px; line-height: 21px;">
-            </form>
-          </div>
-        </div>
-        <hr style="width: 960px; border: 0.5px solid #3a3a3a; margin: 10px auto;"/>
-        
+        <hr style="width: 960px; border: 0.5px solid #3a3a3a; margin: 10px auto;" />
         <div id="copyright">
-          <span style="float: left;">  Copyright © 2018 Domain Name - All Rights Reserved</span>
-          <span style="float: right;">Template by OS Templates</span>
+            <span style="float: left;"> Copyright © 2018 Domain Name - All Rights Reserved</span>
+            <span style="float: right;">Template by OS Templates</span>
         </div>
-        
-      </body>
-    </html>
+</body>
+
+</html>
