@@ -31,19 +31,19 @@ function init() {
     gameOver = false;
     highScore = 0;
     document.addEventListener('keydown', function (event) {
-        if (beginning) {
+        if (beginning && event.keyCode == 66) {
             beginning = false;
             playing = true;
             bird.t = 0;
             keys[66] = true;
             bird.flapping = true;
         }
-        else if (playing) {
+        else if (playing && event.keyCode == 66) {
             bird.flapping = true;
             bird.t = 0;
             keys[66] = true;
         }
-        else if (gameOver) {
+        else if (gameOver && event.keyCode == 66) {
             gameOver = false;
             beginning = true;
             resetPositions();
@@ -69,7 +69,7 @@ function loop() {
         clearScreen();
         draw();
         ctx.fillStyle = "rgb(255, 215, 0)";
-        ctx.fillText("Tap any key to flap...", 135, 300, 200);
+        ctx.fillText("Tap 'b' to flap...", 135, 300, 200);
     }
     else if(playing) {
         clearScreen();

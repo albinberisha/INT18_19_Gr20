@@ -487,3 +487,30 @@ body {
     padding: 10px;
     cursor: pointer;
 }
+
+#products-main-container .products-product-section .product-menu-header .product-header-title {
+    padding: 20px;
+    background-color: #313131;
+    height: 30px;
+}
+
+#products-main-container .products-product-section .product-menu-header .product-header-title h2 {
+    color: white;
+    margin: 0px;
+    float: left;
+}
+
+#products-main-container .products-product-section .product-menu-header .product-header-title a {
+    float: right;
+    text-decoration: none;
+    color: #a7c353;
+    border: 2px solid #a7c353;
+    border-radius: 3px;
+    padding: 5px 10px;
+    transition: 0.5s color;
+}
+
+#products-main-container .products-product-section .product-menu-header .product-header-title a:hover {
+    color: white;
+    background-color: #a7c353;
+}
