@@ -43,7 +43,7 @@ function init() {
             bird.t = 0;
             keys[66] = true;
         }
-        else if (gameOver && event.keyCode == 66) {
+        else if (gameOver && event.keyCode == 65) {
             gameOver = false;
             beginning = true;
             resetPositions();
@@ -127,6 +127,13 @@ function update() {
         }
         if(pipes[i].lowerPipe.x >= 50 && pipes[i].lowerPipe.x < 53)
             score++;
+        if(pipes[i].lowerPipe.x >= 25 && pipes[i].lowerPipe.x < 85 && (bird.y < pipes[i].upperPipe.y+pipes[i].upperPipe.height || bird.y+30 > pipes[i].lowerPipe.y)) {
+            playing = false;
+            gameOver = true;
+            draw();
+            if(score > highScore)
+                highScore = score;
+        }
     }
 }
 
