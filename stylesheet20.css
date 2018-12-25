@@ -522,7 +522,23 @@ body {
     background: -o-radial-gradient(top, rgb(69, 111, 225), black);
 }
 
+#products-main-container .products-product-section #galaxy-watch-section #galaxy-watch-highlights {
+    background: -webkit-radial-gradient(top right, #0093ad, black);
+    background: -moz-radial-gradient(top right, #0093ad, black);
+    background: -o-radial-gradient(top right, #0093ad, black);
+}
+
 #products-main-container .products-product-section #galaxy-note9-section .note9-link {
+    text-decoration: none;
+    color: white;
+    margin: 40px;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 20px 40px;
+    transition: 0.5s color ease;
+}
+
+#products-main-container .products-product-section #galaxy-watch-section .watch-link {
     text-decoration: none;
     color: white;
     margin: 40px;
@@ -537,7 +553,16 @@ body {
     color: #666666;
 }
 
+#products-main-container .products-product-section #galaxy-watch-section .watch-link:hover {
+    background-color: white;
+    color: #666666;
+}
+
 #products-main-container .products-product-section #galaxy-note9-section #galaxy-note9-highlights #highlights-note9-image-container img:hover {
+    transform: scale(1.2);
+}
+
+#products-main-container .products-product-section #galaxy-watch-section #galaxy-watch-highlights #highlights-watch-image-container img:hover {
     transform: scale(1.2);
 }
 
