@@ -65,19 +65,19 @@ function init() {
 }
 
 function loop() {
-    if(beginning) {
+    if (beginning) {
         clearScreen();
         draw();
         ctx.fillStyle = "rgb(255, 215, 0)";
         ctx.fillText("Tap 'b' to flap...", 135, 300, 200);
     }
-    else if(playing) {
+    else if (playing) {
         clearScreen();
         draw();
         update();
         showScore();
     }
-    else if(gameOver) {
+    else if (gameOver) {
         ctx.fillStyle = "#ff0000";
         ctx.fillText("Game Over", 135, 200, 200);
         ctx.fillStyle = "black";
@@ -96,7 +96,7 @@ function draw() {
     pipes[0].draw();
     pipes[1].draw();
     bird.draw();
-    for(var i = 0; i < 3; i++)
+    for (var i = 0; i < 3; i++)
         floors[i].draw();
     ctx.fillStyle = "#000000";
     ctx.fillRect(0, 0, 270, 38);
@@ -110,28 +110,28 @@ function showScore() {
 function update() {
     pipes[0].move(-3);
     pipes[1].move(-3);
-    if(bird.flapping)
+    if (bird.flapping)
         bird.flap();
-    for(var i = 0; i < 3; i++) {
+    for (var i = 0; i < 3; i++) {
         floors[i].move(-3);
-        if(floors[i].x+floors[i].width <= 0)
+        if (floors[i].x + floors[i].width <= 0)
             floors[i].x = width;
     }
-    for(var i = 0; i < 2; i++) {
-        if(pipes[i].lowerPipe.x+pipes[i].lowerPipe.width <= 0) {
+    for (var i = 0; i < 2; i++) {
+        if (pipes[i].lowerPipe.x + pipes[i].lowerPipe.width <= 0) {
             pipes[i].lowerPipe.x = 340;
             pipes[i].upperPipe.x = 340;
-            var randomHeight = Math.random()*51;
-            pipes[i].lowerPipe.y = 235+randomHeight;
-            pipes[i].upperPipe.y = -13+randomHeight;
+            var randomHeight = Math.random() * 51;
+            pipes[i].lowerPipe.y = 235 + randomHeight;
+            pipes[i].upperPipe.y = -13 + randomHeight;
         }
-        if(pipes[i].lowerPipe.x >= 50 && pipes[i].lowerPipe.x < 53)
+        if (pipes[i].lowerPipe.x >= 50 && pipes[i].lowerPipe.x < 53)
             score++;
-        if(pipes[i].lowerPipe.x >= 25 && pipes[i].lowerPipe.x < 85 && (bird.y < pipes[i].upperPipe.y+pipes[i].upperPipe.height || bird.y+30 > pipes[i].lowerPipe.y)) {
+        if (pipes[i].lowerPipe.x >= 25 && pipes[i].lowerPipe.x < 85 && (bird.y < pipes[i].upperPipe.y + pipes[i].upperPipe.height || bird.y + 30 > pipes[i].lowerPipe.y)) {
             playing = false;
             gameOver = true;
             draw();
-            if(score > highScore)
+            if (score > highScore)
                 highScore = score;
         }
     }
@@ -140,15 +140,15 @@ function update() {
 function resetPositions() {
     sky = {
         image: skyImage,
-        draw: function() {
+        draw: function () {
             ctx.drawImage(this.image, 400, 0, 270, 480, 0, 38, 270, 480);
         }
     };
-    pipes[0] = new UpperAndLowerPipe(new Pipe(300, -51+38+0.5*51, 60, 148, upperPipeImage), new Pipe(300, -51+38+148+100+0.5*51, 60, 148, lowerPipeImage));
-    pipes[1] = new UpperAndLowerPipe(new Pipe(500, -51+38+0.1*51, 60, 148, upperPipeImage), new Pipe(500, -51+38+148+100+0.1*51, 60, 148, lowerPipeImage));
-    floors[0] = new Floor(width/2, 0, floorImage);
-    floors[1] = new Floor(width/2, width/2, floorImage);
-    floors[2] = new Floor(width/2, width, floorImage);
+    pipes[0] = new UpperAndLowerPipe(new Pipe(300, -51 + 38 + 0.5 * 51, 60, 148, upperPipeImage), new Pipe(300, -51 + 38 + 148 + 100 + 0.5 * 51, 60, 148, lowerPipeImage));
+    pipes[1] = new UpperAndLowerPipe(new Pipe(500, -51 + 38 + 0.1 * 51, 60, 148, upperPipeImage), new Pipe(500, -51 + 38 + 148 + 100 + 0.1 * 51, 60, 148, lowerPipeImage));
+    floors[0] = new Floor(width / 2, 0, floorImage);
+    floors[1] = new Floor(width / 2, width / 2, floorImage);
+    floors[2] = new Floor(width / 2, width, floorImage);
     bird = new Bird(60, 200, 30, 30, birdImage);
     score = 0;
 }
@@ -159,11 +159,11 @@ function Floor(width, x, image) {
     this.y = 383;
     this.image = image;
 
-    this.draw = function() {
+    this.draw = function () {
         ctx.drawImage(this.image, this.x, this.y);
     }
-    this.move = function(mx) {
-        this.x+= mx;
+    this.move = function (mx) {
+        this.x += mx;
     }
 }
 
@@ -174,11 +174,11 @@ function Pipe(x, y, width, height, image) {
     this.height = height;
     this.image = image;
 
-    this.draw = function() {
+    this.draw = function () {
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
     }
-    this.move = function(mx) {
-        this.x+= mx;
+    this.move = function (mx) {
+        this.x += mx;
     }
 }
 
@@ -186,11 +186,11 @@ function UpperAndLowerPipe(upperPipe, lowerPipe) {
     this.upperPipe = upperPipe;
     this.lowerPipe = lowerPipe;
 
-    this.draw = function() {
+    this.draw = function () {
         this.upperPipe.draw();
         this.lowerPipe.draw();
     }
-    this.move = function(mx) {
+    this.move = function (mx) {
         this.upperPipe.move(mx);
         this.lowerPipe.move(mx);
     }
@@ -207,27 +207,27 @@ function Bird(x, y, width, height, image) {
     this.t = 0;
     this.flapping = false;
 
-    this.draw = function() {
+    this.draw = function () {
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
     }
-    this.move = function(mx, my) {
-        this.x+= mx;
-        this.y+= my;
+    this.move = function (mx, my) {
+        this.x += mx;
+        this.y += my;
     }
-    this.flap = function() {
+    this.flap = function () {
         var gravity = 9.81;
-        if(this.y+this.height < 383) {
-            this.velocity = this.velocity0-gravity*this.t;
+        if (this.y + this.height < 383) {
+            this.velocity = this.velocity0 - gravity * this.t;
             this.move(0, -this.velocity);
         }
         else {
-            this.y = 383-this.height;
+            this.y = 383 - this.height;
             this.draw();
             gameOver = true;
             playing = false;
-            if(score > highScore)
+            if (score > highScore)
                 highScore = score;
         }
-        this.t+= 0.1;
+        this.t += 0.1;
     }
 }
