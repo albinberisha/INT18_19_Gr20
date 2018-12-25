@@ -462,6 +462,7 @@ body {
 #products-main-container .products-product-section {
     margin: auto;
     width: 960px;
+    border-top: 5px solid #a7c353;
 }
 
 #products-main-container .products-product-section .product-menu-header {
@@ -515,7 +516,13 @@ body {
     background-color: #a7c353;
 }
 
-#products-main-container .products-product-section #galaxy-note9-section #galaxy-note9-highlights #note9-buy-now-link {
+#products-main-container .products-product-section #galaxy-note9-section #galaxy-note9-highlights {
+    background: -webkit-radial-gradient(top, rgb(69, 111, 225), black);
+    background: -moz-radial-gradient(top, rgb(69, 111, 225), black);
+    background: -o-radial-gradient(top, rgb(69, 111, 225), black);
+}
+
+#products-main-container .products-product-section #galaxy-note9-section .note9-link {
     text-decoration: none;
     color: white;
     margin: 40px;
@@ -525,7 +532,17 @@ body {
     transition: 0.5s color ease;
 }
 
-#products-main-container .products-product-section #galaxy-note9-section #galaxy-note9-highlights #note9-buy-now-link:hover {
+#products-main-container .products-product-section #galaxy-note9-section .note9-link:hover {
     background-color: white;
     color: #666666;
+}
+
+#products-main-container .products-product-section #galaxy-note9-section #galaxy-note9-highlights #highlights-note9-image-container img:hover {
+    transform: scale(1.2);
+}
+
+#products-main-container .products-product-section #galaxy-note9-section #galaxy-note9-game {
+    background: -webkit-radial-gradient(#a7c353, black);
+    background: -moz-radial-gradient(#a7c353, black);
+    background: -o-radial-gradient(#a7c353, black);
 }

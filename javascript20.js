@@ -1,4 +1,5 @@
 var image_index = 0;
+var d = new Date();
 
 var slider_images = [
     "Images/Be Together.png",
@@ -91,8 +92,6 @@ function previous() {
             document.getElementById('dots').getElementsByTagName('button')[j].style = "background-color: #a7c353;";
     }
 }
-
-setInterval(next, 20000);
 
 function selectProductsCategory(i) {
     if (i == 0) {

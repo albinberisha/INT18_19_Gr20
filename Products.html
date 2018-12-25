@@ -6,7 +6,7 @@
 	<title>Products | Samsung</title>
 	<link rel="icon" href="Icons\favicon.ico">
 	<link rel="stylesheet" href="stylesheet20.css">
-	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="jquery-3.1.1.js"></script>
 	<script src="javascript20.js"></script>
 	<script src="Game Script.js"></script>
 </head>
@@ -62,14 +62,14 @@
 					</nav>
 				</header>
 				<div id="galaxy-note9-section">
-					<div id="galaxy-note9-highlights" style="background-color: rgb(69, 111, 225); padding: 40px;" align="center">
+					<div id="galaxy-note9-highlights" style="padding: 40px;" align="center">
 						<p style="margin: 0px 40px; margin-bottom: 40px; color: white; line-height: 50px; font-size: 30px;">
 							The new super powerful Note <br />
 							<strong>Galaxy Note9</strong>
 						</p>
-						<a id="note9-buy-now-link" href="Shop.html#shopping-section">Buy Now</a>
+						<a class="note9-link" href="Shop.html#shopping-section">Buy Now</a>
 						<div id="highlights-note9-image-container" style="margin: 80px;">
-							<img src="Images/Products/Galaxy Note9/Highlights/Galaxy Note9.png" , width="480px">
+							<img src="Images/Products/Galaxy Note9/Highlights/Galaxy Note9.png" width="480px" style="transition: 1s transform ease;">
 						</div>
 					</div>
 					<div id="galaxy-note9-performance" style="display: none;">
@@ -81,7 +81,12 @@
 					<div id="galaxy-note9-specs" style="display: none;">
 
 					</div>
-					<div id="galaxy-note9-game" style="display: none;">
+					<div id="galaxy-note9-game" style="display: none; position: relative;">
+						<p style="position: absolute; color: white; line-height: 50px; font-size: 30px; top: 100px; left: 40px;">
+							Exclusive for <br />
+							<strong>Galaxy Note9</strong>
+						</p>
+						<a class="note9-link" href="https://play.google.com/store?hl=en" style="position: absolute; top: 250px; left: 20px;">Get it on Play Store</a>
 						<div id="game-container" style="width: 270px; height: 555px; margin: auto;">
 							<canvas id="game-canvas" width="270px" height="555px"></canvas>
 						</div>
@@ -111,17 +116,19 @@
 						</ul>
 					</nav>
 				</header>
-				<div id="highlights">
+				<div>
+					<div id="the-frame-tv-highlights">
 
-				</div>
-				<div id="performance">
+					</div>
+					<div id="the-frame-tv-performance">
 
-				</div>
-				<div id="design">
+					</div>
+					<div id="the-frame-tv-design">
 
-				</div>
-				<div id="specs">
+					</div>
+					<div id="the-frame-tv-specs">
 
+					</div>
 				</div>
 			</div>
 			<div id="galaxy-watch" class="products-product-section">
@@ -147,17 +154,19 @@
 						</ul>
 					</nav>
 				</header>
-				<div id="highlights">
+				<div>
+					<div id="galaxy-watch-highlights">
 
-				</div>
-				<div id="performance">
+					</div>
+					<div id="galaxy-watch-performance">
 
-				</div>
-				<div id="design">
+					</div>
+					<div id="galaxy-watch-design">
 
-				</div>
-				<div id="specs">
+					</div>
+					<div id="galaxy-watch-specs">
 
+					</div>
 				</div>
 			</div>
 			<div id="galaxy-a9" class="products-product-section">
@@ -183,17 +192,19 @@
 						</ul>
 					</nav>
 				</header>
-				<div id="highlights">
+				<div>
+					<div id="galaxy-a9-highlights">
 
-				</div>
-				<div id="performance">
+					</div>
+					<div id="galaxy-a9-performance">
 
-				</div>
-				<div id="design">
+					</div>
+					<div id="galaxy-a9-design">
 
-				</div>
-				<div id="specs">
+					</div>
+					<div id="galaxy-a9-specs">
 
+					</div>
 				</div>
 			</div>
 		</div>
