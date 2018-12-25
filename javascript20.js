@@ -172,3 +172,10 @@ function selectProductColor(i, colors, id) {
         }
     }
 }
+
+function selectProductsSection(id, product, i) {
+    $('#'+id).show();
+    $('#'+id).siblings().hide();
+    $("#products-main-container #"+product+" li").eq(i).css("border-bottom", "2px solid #a7c353");
+    $("#products-main-container #"+product+" li").eq(i).siblings().css("border-bottom", "none");
+}

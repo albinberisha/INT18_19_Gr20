@@ -6,6 +6,8 @@
 	<title>Products | Samsung</title>
 	<link rel="icon" href="Icons\favicon.ico">
 	<link rel="stylesheet" href="stylesheet20.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="javascript20.js"></script>
 	<script src="Game Script.js"></script>
 </head>
 
@@ -27,6 +29,11 @@
 			</nav>
 		</header>
 		<hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;" />
+		<div id="shout" style="margin-bottom: 10px;">
+			<p>
+				"Discover The Galaxy"
+			</p>
+		</div>
 		<div id="products-main-container">
 			<div id="galaxy-note9" class="products-product-section">
 				<header class="product-menu-header">
@@ -37,38 +44,47 @@
 					<nav>
 						<ul>
 							<li style="border-bottom: 2px solid #a7c353;">
-								<button>HIGHLIGHTS</button>
+								<button onclick="selectProductsSection('galaxy-note9-highlights', 'galaxy-note9', 0)">HIGHLIGHTS</button>
 							</li>
 							<li>
-								<button>PERFORMANCE</button>
+								<button onclick="selectProductsSection('galaxy-note9-performance', 'galaxy-note9', 1)">PERFORMANCE</button>
 							</li>
 							<li>
-								<button>DESIGN</button>
+								<button onclick="selectProductsSection('galaxy-note9-design', 'galaxy-note9', 2)">DESIGN</button>
 							</li>
 							<li>
-								<button>SPECS</button>
+								<button onclick="selectProductsSection('galaxy-note9-specs', 'galaxy-note9', 3)">SPECS</button>
 							</li>
 							<li>
-								<button>FLAPPY BIRD</button>
+								<button onclick="selectProductsSection('galaxy-note9-game', 'galaxy-note9', 4)">FLAPPY BIRD</button>
 							</li>
 						</ul>
 					</nav>
 				</header>
-				<div id="highlights">
+				<div id="galaxy-note9-section">
+					<div id="galaxy-note9-highlights" style="background-color: rgb(69, 111, 225); padding: 40px;" align="center">
+						<p style="margin: 0px 40px; margin-bottom: 40px; color: white; line-height: 50px; font-size: 30px;">
+							The new super powerful Note <br />
+							<strong>Galaxy Note9</strong>
+						</p>
+						<a id="note9-buy-now-link" href="Shop.html#shopping-section">Buy Now</a>
+						<div id="highlights-note9-image-container" style="margin: 80px;">
+							<img src="Images/Products/Galaxy Note9/Highlights/Galaxy Note9.png" , width="480px">
+						</div>
+					</div>
+					<div id="galaxy-note9-performance" style="display: none;">
 
-				</div>
-				<div id="performance">
+					</div>
+					<div id="galaxy-note9-design" style="display: none;">
 
-				</div>
-				<div id="design">
+					</div>
+					<div id="galaxy-note9-specs" style="display: none;">
 
-				</div>
-				<div id="specs">
-
-				</div>
-				<div id="game">
-					<div id="game-container" style="width: 270px; height: 555px; margin: auto;">
-						<canvas id="game-canvas" width="270px" height="555px"></canvas>
+					</div>
+					<div id="galaxy-note9-game" style="display: none;">
+						<div id="game-container" style="width: 270px; height: 555px; margin: auto;">
+							<canvas id="game-canvas" width="270px" height="555px"></canvas>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -514,3 +514,18 @@ body {
     color: white;
     background-color: #a7c353;
 }
+
+#products-main-container .products-product-section #galaxy-note9-section #galaxy-note9-highlights #note9-buy-now-link {
+    text-decoration: none;
+    color: white;
+    margin: 40px;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 20px 40px;
+    transition: 0.5s color ease;
+}
+
+#products-main-container .products-product-section #galaxy-note9-section #galaxy-note9-highlights #note9-buy-now-link:hover {
+    background-color: white;
+    color: #666666;
+}
