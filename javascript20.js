@@ -178,3 +178,12 @@ function selectProductsSection(id, product, i) {
     $("#products-main-container #"+product+" li").eq(i).css("border-bottom", "2px solid #a7c353");
     $("#products-main-container #"+product+" li").eq(i).siblings().css("border-bottom", "none");
 }
+
+$(function() {
+    $("#highlights-a9-image-container").mouseenter(function() {
+        $("#highlights-a9-image-container").children("img").css("transform", "rotate(-45deg)");
+    });
+    $("#highlights-a9-image-container").mouseleave(function() {
+        $("#highlights-a9-image-container").children("img").css("transform", "rotate(0deg)");
+    });
+});

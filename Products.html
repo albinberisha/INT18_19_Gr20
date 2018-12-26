@@ -62,13 +62,13 @@
 					</nav>
 				</header>
 				<div id="galaxy-note9-section">
-					<div id="galaxy-note9-highlights" style="padding: 40px;" align="center">
+					<div id="galaxy-note9-highlights" align="center">
 						<p style="margin: 0px 40px; margin-bottom: 40px; color: white; line-height: 50px; font-size: 30px;">
 							The new super powerful Note <br />
 							<strong>Galaxy Note9</strong>
 						</p>
-						<a class="note9-link" href="Shop.html#shopping-section">Buy Now</a>
-						<div id="highlights-note9-image-container" style="margin: 80px;">
+						<a class="buy-now-link" href="Shop.html#shopping-section">Buy Now</a>
+						<div id="highlights-note9-image-container" style="margin: 100px;">
 							<img src="Images/Products/Galaxy Note9/Highlights/Galaxy Note9.png" width="480px" style="transition: 1s transform ease;">
 						</div>
 					</div>
@@ -82,11 +82,12 @@
 
 					</div>
 					<div id="galaxy-note9-game" style="display: none; position: relative;">
-						<p style="position: absolute; color: white; line-height: 50px; font-size: 30px; top: 100px; left: 40px;">
+						<p style="position: absolute; color: white; line-height: 50px; font-size: 30px; top: 100px; left: 50px; text-align: center;">
 							Exclusive for <br />
 							<strong>Galaxy Note9</strong>
 						</p>
-						<a class="note9-link" href="https://play.google.com/store?hl=en" style="position: absolute; top: 250px; left: 20px;">Get it on Play Store</a>
+						<a class="buy-now-link" href="https://play.google.com/store?hl=en" style="position: absolute; top: 250px; left: 20px;">Get
+							it on Play Store</a>
 						<div id="game-container" style="width: 270px; height: 555px; margin: auto;">
 							<canvas id="game-canvas" width="270px" height="555px"></canvas>
 						</div>
@@ -155,14 +156,15 @@
 					</nav>
 				</header>
 				<div id="galaxy-watch-section">
-					<div id="galaxy-watch-highlights" style="position: relative;">
-						<p style="text-align: center; position: absolute; left: 50px; top: 200px; margin: 0px; color: white; line-height: 50px; font-size: 30px;">
-							Stay connected longer <br/>
+					<div id="galaxy-watch-highlights">
+						<p style="text-align: center; position: absolute; left: 100px; top: 200px; margin: 0px; color: white; line-height: 50px; font-size: 30px;">
+							Stay connected longer <br />
 							<strong>Galaxy Watch</strong>
 						</p>
-						<a class="watch-link" href="Shop.html#shopping-section" style="position: absolute; left: 80px; top: 300px;">Buy Now</a>
+						<a class="buy-now-link" href="Shop.html#shopping-section" style="position: absolute; left: 130px; top: 280px;">Buy
+							Now</a>
 						<div id="highlights-watch-image-container" style="margin-left: 500px; overflow: hidden;">
-							<img src="Images/Products/Galaxy Watch/Highlights/Galaxy Watch.png" width="360px" style="transition: 1s transform ease;"/>
+							<img src="Images/Products/Galaxy Watch/Highlights/Galaxy Watch.png" width="360px" style="transition: 1s transform ease;" />
 						</div>
 					</div>
 					<div id="galaxy-watch-performance" style="display: none;">
@@ -185,23 +187,34 @@
 					<nav>
 						<ul>
 							<li style="border-bottom: 2px solid #a7c353;">
-								<button>HIGHLIGHTS</button>
+								<button onclick="selectProductsSection('galaxy-a9-highlights', 'galaxy-a9', 0)">HIGHLIGHTS</button>
 							</li>
 							<li>
-								<button>PERFORMANCE</button>
+								<button onclick="selectProductsSection('galaxy-a9-performance', 'galaxy-a9', 1)">PERFORMANCE</button>
 							</li>
 							<li>
-								<button>DESIGN</button>
+								<button onclick="selectProductsSection('galaxy-a9-design', 'galaxy-a9', 2)">DESIGN</button>
 							</li>
 							<li>
-								<button>SPECS</button>
+								<button onclick="selectProductsSection('galaxy-a9-specs', 'galaxy-a9', 3)">SPECS</button>
 							</li>
 						</ul>
 					</nav>
 				</header>
 				<div id="galaxy-a9-section">
 					<div id="galaxy-a9-highlights">
-
+						<div style="background: -webkit-radial-gradient(top, #ffffff00, black); background: -moz-radial-gradient(#ffffff7f, #0000007f); background: -o-radial-gradient(#ffffff7f, #0000007f); padding: 100px 0px;">
+							<div id="highlights-a9-image-container" style="height: 360px; width: 480px; position: relative; margin: auto; margin-bottom: 100px;">
+								<img src="Images/Products/Galaxy A9/Highlights/Blue Galaxy A9.png" width="360px" style="transition: 1s transform ease; position: absolute;" />
+								<img src="Images/Products/Galaxy A9/Highlights/Pink Galaxy A9.png" width="360px" style="transition: 1s transform ease; position: absolute; left: 120px;" />
+							</div>
+							<p style="text-align: center; margin: 0px; color: white; line-height: 50px; font-size: 30px;">4x fun with the
+								world's first 4x camera <br />
+								<strong>Galaxy A9</strong> <br />
+							</p>
+							<a class="buy-now-link" href="Shop.html#shopping-section" style="margin: 20px auto; display: block; width: max-content;">Buy
+								Now</a>
+						</div>
 					</div>
 					<div id="galaxy-a9-performance">
 

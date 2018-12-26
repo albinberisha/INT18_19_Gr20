@@ -520,15 +520,17 @@ body {
     background: -webkit-radial-gradient(top, rgb(69, 111, 225), black);
     background: -moz-radial-gradient(top, rgb(69, 111, 225), black);
     background: -o-radial-gradient(top, rgb(69, 111, 225), black);
+    padding: 40px;
 }
 
 #products-main-container .products-product-section #galaxy-watch-section #galaxy-watch-highlights {
     background: -webkit-radial-gradient(top right, #0093ad, black);
     background: -moz-radial-gradient(top right, #0093ad, black);
     background: -o-radial-gradient(top right, #0093ad, black);
+    position: relative;
 }
 
-#products-main-container .products-product-section #galaxy-note9-section .note9-link {
+#products-main-container .products-product-section .buy-now-link {
     text-decoration: none;
     color: white;
     margin: 40px;
@@ -538,22 +540,7 @@ body {
     transition: 0.5s color ease;
 }
 
-#products-main-container .products-product-section #galaxy-watch-section .watch-link {
-    text-decoration: none;
-    color: white;
-    margin: 40px;
-    border: 2px solid white;
-    border-radius: 40px;
-    padding: 20px 40px;
-    transition: 0.5s color ease;
-}
-
-#products-main-container .products-product-section #galaxy-note9-section .note9-link:hover {
-    background-color: white;
-    color: #666666;
-}
-
-#products-main-container .products-product-section #galaxy-watch-section .watch-link:hover {
+#products-main-container .products-product-section .buy-now-link:hover {
     background-color: white;
     color: #666666;
 }
@@ -564,6 +551,13 @@ body {
 
 #products-main-container .products-product-section #galaxy-watch-section #galaxy-watch-highlights #highlights-watch-image-container img:hover {
     transform: scale(1.2);
+}
+
+#products-main-container .products-product-section #galaxy-a9-section #galaxy-a9-highlights {
+    background: -webkit-linear-gradient(left, #f010a4, #003997);
+    background: -moz-linear-gradient(left, #f010a4, #003997);
+    background: -o-linear-gradient(left, #f010a4, #003997);
+    position: relative;
 }
 
 #products-main-container .products-product-section #galaxy-note9-section #galaxy-note9-game {
