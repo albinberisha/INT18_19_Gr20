@@ -517,13 +517,24 @@ body {
 }
 
 #products-main-container .products-product-section #galaxy-note9-section #galaxy-note9-highlights {
+    background: radial-gradient(top, rgb(69, 111, 225), black);
     background: -webkit-radial-gradient(top, rgb(69, 111, 225), black);
     background: -moz-radial-gradient(top, rgb(69, 111, 225), black);
     background: -o-radial-gradient(top, rgb(69, 111, 225), black);
     padding: 40px;
 }
 
+#products-main-container .products-product-section #the-frame-tv-section #the-frame-tv-highlights {
+    background: radial-gradient(top left, white, black);
+    background: -webkit-radial-gradient(top left, white, black);
+    background: -moz-radial-gradient(top left, white, black);
+    background: -o-radial-gradient(top left, white, black);
+    padding: 100px;
+    text-shadow: 20px 16px 20px black;
+}
+
 #products-main-container .products-product-section #galaxy-watch-section #galaxy-watch-highlights {
+    background: radial-gradient(top right, #0093ad, black);
     background: -webkit-radial-gradient(top right, #0093ad, black);
     background: -moz-radial-gradient(top right, #0093ad, black);
     background: -o-radial-gradient(top right, #0093ad, black);
@@ -554,6 +565,7 @@ body {
 }
 
 #products-main-container .products-product-section #galaxy-a9-section #galaxy-a9-highlights {
+    background: linear-gradient(left, #f010a4, #003997);
     background: -webkit-linear-gradient(left, #f010a4, #003997);
     background: -moz-linear-gradient(left, #f010a4, #003997);
     background: -o-linear-gradient(left, #f010a4, #003997);
@@ -561,6 +573,7 @@ body {
 }
 
 #products-main-container .products-product-section #galaxy-note9-section #galaxy-note9-game {
+    background: radial-gradient(#a7c353, black);
     background: -webkit-radial-gradient(#a7c353, black);
     background: -moz-radial-gradient(#a7c353, black);
     background: -o-radial-gradient(#a7c353, black);
