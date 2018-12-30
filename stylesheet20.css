@@ -572,6 +572,13 @@ body {
     position: relative;
 }
 
+#products-main-container .products-product-section #galaxy-tab-s4-section #galaxy-tab-s4-highlights {
+    background: linear-gradient(90deg, #fd610b, red);
+    background: -webkit-linear-gradient(90deg, #fd610b, red);
+    background: -moz-linear-gradient(90deg, #fd610b, red);
+    background: -o-linear-gradient(90deg, #fd610b, red);
+}
+
 #products-main-container .products-product-section #galaxy-note9-section #galaxy-note9-game {
     background: radial-gradient(#a7c353, black);
     background: -webkit-radial-gradient(#a7c353, black);
