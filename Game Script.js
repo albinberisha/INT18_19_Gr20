@@ -29,7 +29,7 @@ function init() {
     beginning = true;
     playing = false;
     gameOver = false;
-    highScore = 0;
+    highScore = localStorage.getItem("highScore");
     document.addEventListener('keydown', function (event) {
         if (beginning && event.keyCode == 66) {
             beginning = false;
@@ -131,8 +131,10 @@ function update() {
             playing = false;
             gameOver = true;
             draw();
-            if (score > highScore)
+            if (score > parseInt(localStorage.getItem("highScore"), 10)) {
                 highScore = score;
+                localStorage.setItem("highScore", score.toString(10));
+            }
         }
     }
 }
@@ -225,8 +227,10 @@ function Bird(x, y, width, height, image) {
             this.draw();
             gameOver = true;
             playing = false;
-            if (score > highScore)
+            if (score > parseInt(localStorage.getItem("highScore"), 10)) {
                 highScore = score;
+                localStorage.setItem("highScore", score.toString(10));
+            }
         }
         this.t += 0.1;
     }
