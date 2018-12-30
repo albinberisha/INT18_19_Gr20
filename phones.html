@@ -118,29 +118,7 @@
     <div id="shopping-description-title">
         <h1>Top Picks</h1>
     </div>
-    <div class="product-colors">
-        <button style="background-color: red;"></button>
-        <button style="background-color: green;"></button>
-        <button style="background-color: blue;"></button>
-    </div>
-    <h4>Galaxy Note8</h4>
-    <div class="product-storage">
-        <button>32GB</button>
-        <button>128GB</button>
-    </div>
-    <span>599,99 €</span>
-    <br />
-    <button class="buy-button">Buy It Now</button>
-    </div>
-    <div class="product-section">
-        <div class="product-image-container">
-            <img src="Images/note8.png">
-        </div>
-        <div class="product-colors">
-            <button style="background-color: red;"></button>
-            <button style="background-color: green;"></button>
-            <button style="background-color: blue;"></button>
-        </div>
+   
         </section>
         <div class="product-colors">
             <button onclick="selectProductColor(0, galaxy_s9, 'galaxy-s9-image')" style="background-color: white; border-color: rgb(69, 110, 224);"></button>
@@ -165,6 +143,45 @@
             <button onclick="selectProductColor(0, galaxy_note8, 'galaxy-note8-image')" style="background-color: white; border-color: rgb(0, 0, 0);"></button>
             <button onclick="selectProductColor(1, galaxy_note8, 'galaxy-note8-image')" style="background-color: rgb(202, 185, 161); border-color: rgb(202, 185, 161);"></button>
         </div>
+        <a class="buy-now-link" href="Shop.html#shopping-section" style="position: absolute; left: 130px; top: 280px;">Buy
+            Now</a>
+        <div id="highlights-watch-image-container" style="margin-left: 500px; overflow: hidden;">
+            <img src="Images/Products/Galaxy Watch/Highlights/Galaxy Watch.png" width="360px" style="transition: 1s transform ease;" />
+        </div>
+    </div>
+    <div id="galaxy-watch-performance" style="display: none;">
+
+    </div>
+    <div id="galaxy-watch-design" style="display: none;">
+
+    </div>
+    <div id="galaxy-watch-specs" style="display: none;">
+
+    </div>
+</div>
+</div>
+<div id="galaxy-a9" class="products-product-section">
+<header class="product-menu-header">
+    <div class="product-header-title">
+        <h2>Galaxy A9</h2>
+        <a href="Shop.html#shopping-section">Buy Now</a>
+    </div>
+    <nav>
+        <ul>
+            <li style="border-bottom: 2px solid #a7c353;">
+                <button onclick="selectProductsSection('galaxy-a9-highlights', 'galaxy-a9', 0)">HIGHLIGHTS</button>
+            </li>
+            <li>
+                <button onclick="selectProductsSection('galaxy-a9-performance', 'galaxy-a9', 1)">PERFORMANCE</button>
+            </li>
+            <li>
+                <button onclick="selectProductsSection('galaxy-a9-design', 'galaxy-a9', 2)">DESIGN</button>
+            </li>
+            <li>
+                <button onclick="selectProductsSection('galaxy-a9-specs', 'galaxy-a9', 3)">SPECS</button>
+            </li>
+        </ul>
+    </nav>
         <h4>Galaxy Note8</h4>
     </div>
     <div class="shopping-products-section" id="tablet-products" style="visibility: hidden;">
