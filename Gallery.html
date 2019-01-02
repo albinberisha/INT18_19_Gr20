@@ -6,6 +6,34 @@
 	<title>Gallery | Samsung</title>
 	<link rel="icon" href="Icons\favicon.ico">
 	<link rel="stylesheet" href="stylesheet20.css">
+	<style>
+		#main {
+			padding-bottom: 20px;
+		}
+		#gallery-grid-container {
+			display: grid;
+			grid-template-columns: 225px 225px 225px 225px;
+			grid-template-rows: 225px 225px 225px 225px;
+			grid-gap: 6.6666px 6.6666px;
+			margin: 20px;
+			margin-bottom: 0px;
+		}
+		#gallery-grid-container .grid-img-container {
+			background-color: #313131;
+			overflow: hidden;
+		}
+		#gallery-grid-container .grid-img-container img {
+			transition: 1s transform ease;
+			cursor: pointer;
+		}
+		#gallery-grid-container .grid-img-container img:hover {
+			transform: scale(1.2);
+		}
+	</style>
+	<script src="jquery-3.1.1.js"></script>
+	<script>
+
+	</script>
 </head>
 
 <body>
@@ -24,13 +52,46 @@
 					<li><a href="Support.html">SUPPORT</a></li>
 				</ul>
 			</nav>
-		
+
 		</header>
-		
+
 		<hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;" />
+
+		<h2 style="margin: 20px auto; width: max-content; color: #666666;">Photography</h2>
+		<div id="gallery-grid-container">
+			<div class="grid-img-container" style="grid-column: 1 / span 4;">
+				<img src="Images//Samsung Headquarters.jpg" height="225px" />
+			</div>
+			<div class="grid-img-container" style="grid-column: 1 / span 2;">
+				<img src="Images//Samsung Headquarters.jpg" height="225px" />
+			</div>
+			<div class="grid-img-container">
+				<img src="Images//Samsung Headquarters.jpg" height="225px" />
+			</div>
+			<div class="grid-img-container">
+				<img src="Images//Samsung Headquarters.jpg" height="225px" />
+			</div>
+			<div class="grid-img-container" style="grid-row: 3 / span 2;">
+				<img src="Images//Samsung Headquarters.jpg" height="455px" />
+			</div>
+			<div class="grid-img-container" style="grid-column: 2 / span 2;">
+				<img src="Images//Samsung Headquarters.jpg" height="225px" />
+			</div>
+			<div class="grid-img-container">
+				<img src="Images//Samsung Headquarters.jpg" height="225px" />
+			</div>
+			<div class="grid-img-container">
+				<img src="Images//Samsung Headquarters.jpg" height="225px" />
+			</div>
+			<div class="grid-img-container" style="grid-column: 3 / span 2;">
+				<img src="Images//Samsung Headquarters.jpg" height="225px" />
+			</div>
+		</div>
+		<div id="image-viewer" style="display: none;">
+		</div>
 	</div>
 
-	
+
 	<div id="details-contact">
 		<div id="details" class="details-section">
 			<span class="details-title">Company Details</span>
