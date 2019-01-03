@@ -32,7 +32,15 @@
 	</style>
 	<script src="jquery-3.1.1.js"></script>
 	<script>
-
+		function viewImage(image) {
+			$("#main, #details-contact").css({ "filter": "blur(8px)", "transition": "0.5s filter" });
+			$("#image-viewer").css({ "width": window.innerWidth, "height": window.innerHeight, "display": "unset"});
+			$("#image-viewer img").attr("src", image);
+		}
+		function hideImage() {
+			$("#main, #details-contact").css("filter", "none");
+			$("#image-viewer").css("display", "none");
+		}
 	</script>
 </head>
 
@@ -55,11 +63,11 @@
 
 		</header>
 
-		<hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;" />
+		<hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto" />
 
 		<h2 style="margin: 20px auto; width: max-content; color: #666666;">Photography</h2>
 		<div id="gallery-grid-container">
-			<div class="grid-img-container" style="grid-column: 1 / span 4;">
+			<div class="grid-img-container" style="grid-column: 1 / span 4;" onclick="viewImage('Images//Be Together.png')">
 				<img src="Images//Samsung Headquarters.jpg" height="225px" />
 			</div>
 			<div class="grid-img-container" style="grid-column: 1 / span 2;">
@@ -87,8 +95,11 @@
 				<img src="Images//Samsung Headquarters.jpg" height="225px" />
 			</div>
 		</div>
-		<div id="image-viewer" style="display: none;">
-		</div>
+	</div>
+
+	<div id="image-viewer" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 1;">
+		<button onclick="hideImage()" style="filter: none; position: absolute; right: 60px; top: 40px;">Close</button>
+		<img src="Images/Samsung Headquarters.jpg" alt="" width="720px" style="margin: 200px auto; display: block; box-shadow: 0px 10px 30px 0px #0000007f;" />
 	</div>
 
 
