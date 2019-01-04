@@ -72,6 +72,9 @@
 		#play-button:active {
 			transform: scale(0.9);
 		}
+		#video-title {
+			color: #999999;
+		}
 	</style>
 	<script src="jquery-3.1.1.js"></script>
 	<script>
@@ -79,6 +82,11 @@
 			"Images/Galaxy Note9.jpg",
 			"Images/Galaxy A9.jpg",
 			"Images/Galaxy Watch.jpg"
+		];
+		var videoTitles = [
+			"Galaxy Note9: Official Introduction",
+			"Galaxy S9|S9+: Official Introduction",
+			"Galaxy Watch: Official Introduction"
 		];
 		var videos = [
 			"Videos/Gallery/Galaxy Note9 Official Introduction.mp4",
@@ -111,6 +119,7 @@
 				currentVideo = 0;
 			$("#gallery-videos-container #video-image").attr("src", videoImages[currentVideo]);
 			$("#gallery-videos-container #play-button").attr("onclick", "showVideo('" + videos[currentVideo] + "')");
+			document.getElementById("video-title").innerText = videoTitles[currentVideo];
 		}
 		function previousVideo() {
 			currentVideo--;
@@ -118,6 +127,7 @@
 				currentVideo = 2;
 			$("#gallery-videos-container #video-image").attr("src", videoImages[currentVideo]);
 			$("#gallery-videos-container #play-button").attr("onclick", "showVideo('" + videos[currentVideo] + "')");
+			document.getElementById("video-title").innerText = videoTitles[currentVideo];
 		}
 	</script>
 </head>
@@ -147,16 +157,16 @@
 			creators.</p>
 		<div id="gallery-grid-container">
 			<div class="grid-img-container" style="grid-column: 1 / span 4;">
-				<img src="Images/Gallery/Discover.jpg" width="920px" onclick="viewImage('Images/Gallery/Discover.jpg')" />
+				<img src="Images/Gallery/Discover.png" width="920px" onclick="viewImage('Images/Gallery/Discover.png')" />
 			</div>
 			<div class="grid-img-container" style="grid-column: 1 / span 2;">
-				<img src="Images/Gallery/The Refresher.jpg" width="460px" onclick="viewImage('Images/Gallery/The Refresher.jpg')" />
+				<img src="Images/Gallery/The Refresher.png" width="460px" onclick="viewImage('Images/Gallery/The Refresher.png')" />
 			</div>
 			<div class="grid-img-container">
-				<img src="Images/Gallery/The Refresher.jpg" width="225px" onclick="viewImage('Images/Gallery/The Refresher.jpg')" />
+				<img src="Images/Gallery/The Refresher.png" width="225px" onclick="viewImage('Images/Gallery/The Refresher.png')" />
 			</div>
 			<div class="grid-img-container">
-				<img src="Images/Gallery/The Sundial.jpg" width="225px" onclick="viewImage('Images/Gallery/The Sundial.jpg')" />
+				<img src="Images/Gallery/The Sun Downer.png" width="225px" onclick="viewImage('Images/Gallery/The Sun Downer.png')" />
 			</div>
 			<div class="grid-img-container" style="grid-row: 3 / span 2;">
 				<img src="Images//Samsung Headquarters.jpg" height="455px" onclick="viewImage('Images/Be Together.png')" />
@@ -165,13 +175,13 @@
 				<img src="Images//Samsung Headquarters.jpg" height="225px" onclick="viewImage('Images/Be Together.png')" />
 			</div>
 			<div class="grid-img-container">
-				<img src="Images/Gallery/The Levitation.jpg" width="225px" onclick="viewImage('Images/Gallery/The Levitation.jpg')" />
+				<img src="Images/Gallery/The Levitation.png" width="225px" onclick="viewImage('Images/Gallery/The Levitation.png')" />
 			</div>
 			<div class="grid-img-container">
-				<img src="Images/Gallery/The Structure.jpg" width="225px" onclick="viewImage('Images/Gallery/The Structure.jpg')" />
+				<img src="Images/Gallery/The Structure.png" width="225px" onclick="viewImage('Images/Gallery/The Structure.png')" />
 			</div>
 			<div class="grid-img-container" style="grid-column: 3 / span 2;">
-				<img src="Images//Samsung Headquarters.jpg" height="225px" onclick="viewImage('Images/Be Together.png')" />
+				<img src="Images/Samsung Headquarters.jpg" height="225px" onclick="viewImage('Images/Be Together.png')" />
 			</div>
 		</div>
 		<hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #e2e2e2; margin: 40px auto;" />
@@ -199,6 +209,7 @@
 					</button>
 				</div>
 			</div>
+			<h3 id="video-title">Galaxy Note9: Official Introduction</h3>
 		</div>
 	</div>
 
