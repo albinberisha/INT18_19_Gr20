@@ -105,7 +105,6 @@ body {
     bottom: 148px;
     border: none;
     border-radius: 27px;
-    transition: width 0.5s;
     cursor: pointer;
 }
 

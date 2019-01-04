@@ -29,9 +29,34 @@
 		#gallery-grid-container .grid-img-container img:hover {
 			transform: scale(1.2);
 		}
+		#gallery-videos-container h3 {
+			color: #999999;
+		}
+		#gallery-videos-container #arrays button {
+			padding: 0px;
+			position: absolute;
+			width: 54px;
+			height: 54px;
+			background-color: #a7c353;
+			top: 148px;
+			bottom: 148px;
+			border: none;
+			border-radius: 27px;
+			transition: width 0.5s;
+			cursor: pointer;
+		}
+		#gallery-videos-container #arrays button:active {
+			transform: scale(0.9);
+		}
 	</style>
 	<script src="jquery-3.1.1.js"></script>
 	<script>
+		var videoImages = [
+			"Images/Galaxy Note9.jpg",
+			"Images/Galaxy A9.jpg",
+			"Images/Galaxy Watch.jpg"
+		];
+		var currentVideoImage = 0;
 		function viewImage(image) {
 			$("#main, #details-contact").css({ "filter": "blur(8px)", "transition": "0.5s filter" });
 			$("#image-viewer").css({ "width": "100%", "height": "100%", "display": "unset" });
@@ -40,6 +65,28 @@
 		function hideImage() {
 			$("#main, #details-contact").css("filter", "none");
 			$("#image-viewer").css("display", "none");
+		}
+		function showVideo(video) {
+			$("#main, #details-contact").css({ "filter": "blur(8px)", "transition": "0.5s filter" });
+			$("#video-viewer").css({ "width": "100%", "height": "100%", "display": "unset" });
+			$("#video-viewer video").attr("src", video);
+		}
+		function hideVideo() {
+			$("#main, #details-contact").css("filter", "none");
+			$("#video-viewer").css("display", "none");
+			$("#video-viewer video").attr("src", "unset");
+		}
+		function nextVideo() {
+			currentVideoImage++;
+			if (currentVideoImage > 2)
+				currentVideoImage = 0;
+			$("#gallery-videos-container #video-image").attr("src", videoImages[currentVideoImage]);
+		}
+		function previousVideo() {
+			currentVideoImage--;
+			if (currentVideoImage < 0)
+				currentVideoImage = 2;
+			$("#gallery-videos-container #video-image").attr("src", videoImages[currentVideoImage]);
 		}
 	</script>
 </head>
@@ -60,7 +107,6 @@
 					<li><a href="Support.html">SUPPORT</a></li>
 				</ul>
 			</nav>
-
 		</header>
 
 		<hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto" />
@@ -102,14 +148,32 @@
 		<p style="color: #999999; text-align: center; margin-top: 0px; margin-bottom: 40px;">
 			#WithGalaxy
 		</p>
-		<div id="gallery-videos-container">
-
+		<div id="gallery-videos-slider" style="margin: 20px;">
+			<div id="gallery-videos-container" style="position: relative; overflow: hidden; width: 920px; height: 350px;">
+				<img id="video-image" src="Images/Galaxy Note9.jpg" width="920px" />
+				<button onclick="showVideo('Videos/Gallery/Galaxy Note9 Official Introduction.mp4')" style="position: absolute; top: 50%; left: 50%;">Play</button>
+				<div id="arrays">
+					<button onclick="previousVideo()" style="left: 5px;">
+						<img src="SVGs\Arrow BG Color.svg" style="position: absolute; z-index: 1; top: 2px; left: 2px;">
+						<img src="SVGs\Left Arrow.svg" style="position: absolute; z-index: 2; top: 13px; left: 19px;">
+					</button>
+					<button onclick="nextVideo()" style="right: 5px;">
+						<img src="SVGs\Arrow BG Color.svg" style="position: absolute; z-index: 1; top: 2px; left: 2px;">
+						<img src="SVGs\Right Arrow.svg" style="position: absolute; z-index: 2; top: 13px; left: 19px;">
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<div id="image-viewer" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 1;">
 		<button onclick="hideImage()" style="filter: none; position: absolute; right: 10%; top: 40px;">Close</button>
 		<img src="Images/Samsung Headquarters.jpg" alt="" height="480px" style="margin: 8% auto; display: block; box-shadow: 0px 10px 30px 0px #0000007f;" />
+	</div>
+
+	<div id="video-viewer" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 1;">
+		<button onclick="hideVideo()" style="filter: none; position: absolute; right: 10%; top: 40px;">Close</button>
+		<video src="Videos/Gallery/Galaxy Note9 Official Introduction.mp4" controls width="920px" autoplay style="margin: 8% auto; display: block; box-shadow: 0px 10px 30px 0px #0000007f;"></video>
 	</div>
 
 	<div id="details-contact">
@@ -132,7 +196,7 @@
 			<span>Email: contact@mydomain.com</span>
 			<br />
 			<br />
-			<span>Officr Hours</span>
+			<span>Office Hours</span>
 			<br />
 			<span>Monday - Friday: 08:00 - 17:30</span>
 			<br />
@@ -190,7 +254,6 @@
 				<p style="text-align: right; margin: 10px 0px;"><a href="#" style="width: 225px; font-size: 12px; line-height: 14px; color: #a7c353; text-decoration: none;">Read
 						More »</a></p>
 			</div>
-
 		</div>
 		<div id="contact" class="details-section" style="padding-right: 0px;">
 			<span class="details-title">Contact Us</span>
