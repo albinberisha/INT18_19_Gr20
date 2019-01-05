@@ -29,16 +29,9 @@ function init() {
     beginning = true;
     playing = false;
     gameOver = false;
-    if(sessionStorage.getItem("highScore") == "[object Undefined]") {
-        highScore = 0;
-        sessionStorage.setItem("highScore", toString(highScore));
-    }
-    else
-        highScore = sessionStorage.getItem("highScore");
-    if(localStorage.getItem("allTimeHighScore") == "[object Undefined]") {
-        allTimeHighScore = 0;
-        localStorage.setItem("allTimeHighScore", toString(allTimeHighScore));
-    }
+    sessionStorage.setItem("highScore", "0");
+    highScore = sessionStorage.getItem("highScore");
+    allTimeHighScore = localStorage.getItem("allTimeHighScore");
     document.addEventListener('keydown', function (event) {
         if (beginning && event.keyCode == 66) {
             beginning = false;
