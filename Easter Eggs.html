@@ -23,44 +23,60 @@
         tr:nth-child(even){background-color:tomato;}
         
         th {
-          background-color:black;
-          color: white;
+            background-color:black;
+            color: white;
         }
-        </style>
+        ol { list-style-type: upper-roman; }
+        ol ol {list-style-type: upper-alpha;}
+        ol ol ol {list-style-type: decimal}
+        li.pink {  color:pink;}
+        li.red {  color:red;}
+        li.blue {  color:blue;}
+        #div1, #div2 {
+            float: left;
+            width: 100px;
+            height: 20px;
+            margin-top: 1px;
+            padding: 5px;
+            border: 1px solid black;
+        }
 
-<style>
-    ol { list-style-type: upper-roman; }
-    ol ol {list-style-type: upper-alpha;}
-    ol ol ol {list-style-type: decimal}
-    li.pink {  color:pink;}
-    li.red {  color:red;}
-    li.blue {  color:blue;}
-</style>
+        #red {
+            transform: rotateX(180deg);
+            background-color: red;
+            width: 400px;
+            height: 200px;
+        }
 
-<style>
-    #div1, #div2 {
-      float: left;
-      width: 100px;
-      height: 20px;
-      margin-top: 1px;
-      padding: 5px;
-      border: 1px solid black;
-    }
+        #green {
+            transform: rotateY(45deg);
+            background-color: green;
+            width: 400px;
+            height: 200px;
+        }
+
+        #blue {
+            transform: rotateZ(145deg);
+            background-color: blue;
+            width: 400px;
+            height: 200px;
+            margin-bottom: 100px;
+        }
     </style>
     <script>
-    function allowDrop(ev) {
-      ev.preventDefault();
-    }
-    
-    function drag(ev) {
-      ev.dataTransfer.setData("text", ev.target.id);
-    }
-    
-    function drop(ev) {
-      ev.preventDefault();
-      var data = ev.dataTransfer.getData("text");
-      ev.target.appendChild(document.getElementById(data));
-    }
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
     </script>
 
 
@@ -87,161 +103,166 @@
         <hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;" />
         <div style="padding: 20px;">
 
+            <div id="red">
+                This Rectangle is rotatet around the X Axis
+            </div>
+            <div id="green">
+                This Rectangle is rotatet around the Y Axis
+            </div>
+            <div id="blue">
+                This Rectangle is rotatet around the Z Axis
+            </div>
+            <div style="background-image: url('Images/Free Delivery.png'); width: 400px; height: 400px; background-position: 20px 20px;">
 
+            </div>
 
-<<<<<<< HEAD
-            
-           
-            Qitu qitni
-<<<<<<< HEAD
-
-            <form method="POST" action="htmlform.html">
+            <form method="POST" action="index.html">
                 <fieldset>
                     <legend>Te dhenat per formular:</legend>
-            
-            <label>Emri</label>
-            <input type="text" name="Emri"/><br>
-            <label>Mbiemri</label>
-            <input type="text" name="Mbiemri"/> <br>
-            <label>Datelindja</label>
-            <input type="date" name="Datelindja"/> <br>
-            <label>Vendlindja</label>
-            <select name="Vendlindja">
-                <option value="-1">---Zgjedh vendin----</option>
-                <option value="1">Mitrovice</option>
-                <option>Prishtine</option>
-                <option>Gjialn</option>
-                <option>Mitrovice</option>
-            </select><br>
-            <label>Gjinia</label>
-            <input type="radio" name="Gjinia" value="M">M
-            <input type="radio" name="Gjinia" value="F">F <br>
-            <label>Gjinia:</label>
-            <input type="checkbox" name="Gjuhet" value="C#"> M
-            <input type="checkbox" name="Gjuhet" value="C++">F
-            <br>
-            </fieldset>
-            <p>
-                <input type="submit" value="Ruaj"/>
-                <input type="reset" value="Reset"/>
-            </p>
-=======
->>>>>>> 294598f86ceaa6220157a4989b39ed12423ce749
-            
-            
 
-    <ol>
-        <li class="pink">
-            Compact Cars
-            <ol>
-                <li>Two Door
-                 <ol>
-                     <li>Hyundai Accent</li>
-                     <li>Chevrolet Cobalt</li>
-                     <li>Honda Civic</li>
-                 </ol>
-                </li>
-                <li>Four Door
-                    <ol>
-                        <li>Hyundai Accent</li>
-                        <li>Chevrolet Cobalt</li>
-                        <li>Honda Civic</li>
-                    </ol>
-                </li>
-            </ol>
-        </li>
-        <li class="blue">Mid-size Cars
-            <ol>
-                <li>Two Door
+                    <label>Emri</label>
+                    <input type="text" name="Emri" /><br>
+                    <label>Mbiemri</label>
+                    <input type="text" name="Mbiemri" /> <br>
+                    <label>Datelindja</label>
+                    <input type="date" name="Datelindja" /> <br>
+                    <label>Vendlindja</label>
+                    <select name="Vendlindja">
+                        <option value="-1">---Zgjedh vendin----</option>
+                        <option value="1">Mitrovice</option>
+                        <option>Prishtine</option>
+                        <option>Gjialn</option>
+                        <option>Mitrovice</option>
+                    </select><br>
+                    <label>Gjinia</label>
+                    <input type="radio" name="Gjinia" value="M">M
+                    <input type="radio" name="Gjinia" value="F">F <br>
+                    <label>Gjinia:</label>
+                    <input type="checkbox" name="Gjuhet" value="C#"> M
+                    <input type="checkbox" name="Gjuhet" value="C++">F
+                    <br>
+                </fieldset>
+                <p>
+                    <input type="submit" value="Ruaj" />
+                    <input type="reset" value="Reset" />
+                </p>
+                =======
+                >>>>>>> 294598f86ceaa6220157a4989b39ed12423ce749
+
+
+
                 <ol>
-                    <li>Honda Accord</li>
-                    <li>Hyundai Genesis</li>
-                    <li>Nisan Altima</li>
-                </ol> 
-                </li>
-                <li>Four Door
-                   <ol>
-                       <li>Honda Accord</li>
-                       <li>Dodge Avenger</li>
-                       <li>Ford Fusion</li>
-                   </ol>
-                </li>
-            </ol>
-        </li>
-        <li class="red"> Sports Car
-                <ol>
-                    <li>Coupe
+                    <li class="pink">
+                        Compact Cars
                         <ol>
-                            <li>Jaguar XK</li>
-                            <li>Ford Mustang</li>
-                            <li>Nisan Z</li>
+                            <li>Two Door
+                                <ol>
+                                    <li>Hyundai Accent</li>
+                                    <li>Chevrolet Cobalt</li>
+                                    <li>Honda Civic</li>
+                                </ol>
+                            </li>
+                            <li>Four Door
+                                <ol>
+                                    <li>Hyundai Accent</li>
+                                    <li>Chevrolet Cobalt</li>
+                                    <li>Honda Civic</li>
+                                </ol>
+                            </li>
                         </ol>
                     </li>
-                    <li>Convertible
+                    <li class="blue">Mid-size Cars
                         <ol>
-                            <li>Mazda Miata</li>
-                            <li>Ford Mustang</li>
-                            <li>Lotus Elise</li> 
+                            <li>Two Door
+                                <ol>
+                                    <li>Honda Accord</li>
+                                    <li>Hyundai Genesis</li>
+                                    <li>Nisan Altima</li>
+                                </ol>
+                            </li>
+                            <li>Four Door
+                                <ol>
+                                    <li>Honda Accord</li>
+                                    <li>Dodge Avenger</li>
+                                    <li>Ford Fusion</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="red"> Sports Car
+                        <ol>
+                            <li>Coupe
+                                <ol>
+                                    <li>Jaguar XK</li>
+                                    <li>Ford Mustang</li>
+                                    <li>Nisan Z</li>
+                                </ol>
+                            </li>
+                            <li>Convertible
+                                <ol>
+                                    <li>Mazda Miata</li>
+                                    <li>Ford Mustang</li>
+                                    <li>Lotus Elise</li>
+                                </ol>
+                            </li>
                         </ol>
                     </li>
                 </ol>
-        </li>
-    </ol>
 
 
 
 
 
-            <h2 style="text-align:center">Tabela</h2>
-            
-            <table>
-              <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Savings</th>
-              </tr>
-              <tr>
-                <td>Ardit</td>
-                <td>Rezon</td>
-                <td>$100</td>
-              </tr>
-              <tr>
-                <td>Besniku</td>
-                <td>Filan</td>
-                <td>$150</td>
-              </tr>
-              <tr>
-                <td>Fisteku</td>
-                <td>Edoni</td>
-                <td>$300</td>
-              </tr>
-              <tr>
-                <td>Dardani</td>
-                <td>Korabi</td>
-                <td>$250</td>
-            </tr>
-            </table>
+                <h2 style="text-align:center">Tabela</h2>
 
-            <p>I will display euro &euro;</p>
-    <p>I will display  &#203;</p>
-    <p>I will display &#235;</p>
-    <p>I will display &#231;</p>
-    <p>I will display &#199;</p>
-    
+                <table>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Savings</th>
+                    </tr>
+                    <tr>
+                        <td>Ardit</td>
+                        <td>Rezon</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Besniku</td>
+                        <td>Filan</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Fisteku</td>
+                        <td>Edoni</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Dardani</td>
+                        <td>Korabi</td>
+                        <td>$250</td>
+                    </tr>
+                </table>
 
+                <p>I will display euro &euro;</p>
+                <p>I will display &#203;</p>
+                <p>I will display &#235;</p>
+                <p>I will display &#231;</p>
+                <p>I will display &#199;</p>
 
 
 
-<p>Drag the image back and forth between the two div elements.</p>
-
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <img src="Images/foto1.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="20">
-</div>
-
-<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 
->>>>>>> 2ade8ef8dc81369689d7f1f098c25a1e9c9352ee
+                <p>Drag the image back and forth between the two div elements.</p>
+
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="Images/foto1.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="20">
+                </div>
+
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+                >>>>>>> 2ade8ef8dc81369689d7f1f098c25a1e9c9352ee
         </div>
     </div>
 
@@ -349,7 +370,7 @@
         <span style="float: left;">Copyright © 2018 Domain Name - All Rights Reserved</span>
         <span style="float: right;">Template by OS Templates</span>
     </div>
-    
+
 
 </body>
 

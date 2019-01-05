@@ -13,17 +13,17 @@
 		var i = 0;
 		var j = 0;
 		var k = 0;
-		$(function() {
-			$("#galaxy-note9-game").css("background", "-webkit-radial-gradient(rgb("+(i+new Date().getMilliseconds())%256+", "+(j+new Date().getMilliseconds())%256+", "+(k+new Date().getMilliseconds())%256+"), black");
+		$(function () {
+			$("#galaxy-note9-game").css("background", "-webkit-radial-gradient(rgb(" + (i + new Date().getMilliseconds()) % 256 + ", " + (j + new Date().getMilliseconds()) % 256 + ", " + (k + new Date().getMilliseconds()) % 256 + "), black");
 		});
-		setInterval(function() {
-			$("#galaxy-note9-game").css("background", "-webkit-radial-gradient(rgb("+(i+new Date().getMilliseconds())%256+", "+(j+new Date().getMilliseconds())%256+", "+(k+new Date().getMilliseconds())%256+"), black");
-			$("#galaxy-note9-game").css("background", "radial-gradient(rgb("+(i+new Date().getMilliseconds())%256+", "+(j+new Date().getMilliseconds())%256+", "+(k+new Date().getMilliseconds())%256+"), black");
-			$("#galaxy-note9-game").css("background", "-moz-radial-gradient(rgb("+(i+new Date().getMilliseconds())%256+", "+(j+new Date().getMilliseconds())%256+", "+(k+new Date().getMilliseconds())%256+"), black");
-			$("#galaxy-note9-game").css("background", "-o-radial-gradient(rgb("+(i+new Date().getMilliseconds())%256+", "+(j+new Date().getMilliseconds())%256+", "+(k+new Date().getMilliseconds())%256+"), black");
+		setInterval(function () {
+			$("#galaxy-note9-game").css("background", "-webkit-radial-gradient(rgb(" + (i + new Date().getMilliseconds()) % 256 + ", " + (j + new Date().getMilliseconds()) % 256 + ", " + (k + new Date().getMilliseconds()) % 256 + "), black");
+			$("#galaxy-note9-game").css("background", "radial-gradient(rgb(" + (i + new Date().getMilliseconds()) % 256 + ", " + (j + new Date().getMilliseconds()) % 256 + ", " + (k + new Date().getMilliseconds()) % 256 + "), black");
+			$("#galaxy-note9-game").css("background", "-moz-radial-gradient(rgb(" + (i + new Date().getMilliseconds()) % 256 + ", " + (j + new Date().getMilliseconds()) % 256 + ", " + (k + new Date().getMilliseconds()) % 256 + "), black");
+			$("#galaxy-note9-game").css("background", "-o-radial-gradient(rgb(" + (i + new Date().getMilliseconds()) % 256 + ", " + (j + new Date().getMilliseconds()) % 256 + ", " + (k + new Date().getMilliseconds()) % 256 + "), black");
 			i++;
-			j+= 2;
-			k+= 3;
+			j += 2;
+			k += 3;
 		}, 100);
 	</script>
 </head>
@@ -63,6 +63,7 @@
 							<li style="border-bottom: 2px solid #a7c353;">
 								<button onclick="selectProductsSection('galaxy-note9-highlights', 'galaxy-note9', 0)">HIGHLIGHTS</button>
 							</li>
+							<!--
 							<li>
 								<button onclick="selectProductsSection('galaxy-note9-performance', 'galaxy-note9', 1)">PERFORMANCE</button>
 							</li>
@@ -72,6 +73,7 @@
 							<li>
 								<button onclick="selectProductsSection('galaxy-note9-specs', 'galaxy-note9', 3)">SPECS</button>
 							</li>
+							-->
 							<li>
 								<button onclick="selectProductsSection('galaxy-note9-game', 'galaxy-note9', 4)">FLAPPY BIRD</button>
 							</li>
@@ -89,6 +91,7 @@
 							<img src="Images/Products/Galaxy Note9/Highlights/Galaxy Note9.png" width="480px" style="transition: 1s transform ease;">
 						</div>
 					</div>
+					<!--
 					<div id="galaxy-note9-performance" style="display: none;">
 
 					</div>
@@ -98,6 +101,7 @@
 					<div id="galaxy-note9-specs" style="display: none;">
 
 					</div>
+					-->
 					<div id="galaxy-note9-game" style="display: none; position: relative;">
 						<p style="position: absolute; color: white; line-height: 50px; font-size: 30px; top: 100px; left: 50px; text-align: center;">
 							Exclusive for <br />
@@ -122,6 +126,7 @@
 							<li style="border-bottom: 2px solid #a7c353;">
 								<button onclick="selectProductsSection('the-frame-tv-highlights', 'the-frame-tv', 0)">HIGHLIGHTS</button>
 							</li>
+							<!--
 							<li>
 								<button onclick="selectProductsSection('the-frame-tv-performance', 'the-frame-tv', 1)">PERFORMANCE</button>
 							</li>
@@ -131,6 +136,7 @@
 							<li>
 								<button onclick="selectProductsSection('the-frame-tv-specs', 'the-frame-tv', 3)">SPECS</button>
 							</li>
+							-->
 						</ul>
 					</nav>
 				</header>
@@ -147,6 +153,7 @@
 						<a class="buy-now-link" href="Shop.html#shopping-section" style="display: block; margin: auto; width: max-content; text-shadow: none;">Buy
 							Now</a>
 					</div>
+					<!--
 					<div id="the-frame-tv-performance">
 
 					</div>
@@ -156,6 +163,7 @@
 					<div id="the-frame-tv-specs">
 
 					</div>
+					-->
 				</div>
 			</div>
 			<div id="galaxy-watch" class="products-product-section">
@@ -169,6 +177,7 @@
 							<li style="border-bottom: 2px solid #a7c353;">
 								<button onclick="selectProductsSection('galaxy-watch-highlights', 'galaxy-watch', 0)">HIGHLIGHTS</button>
 							</li>
+							<!--
 							<li>
 								<button onclick="selectProductsSection('galaxy-watch-performance', 'galaxy-watch', 1)">PERFORMANCE</button>
 							</li>
@@ -178,6 +187,7 @@
 							<li>
 								<button onclick="selectProductsSection('galaxy-watch-specs', 'galaxy-watch', 3)">SPECS</button>
 							</li>
+							-->
 						</ul>
 					</nav>
 				</header>
@@ -193,6 +203,7 @@
 							<img src="Images/Products/Galaxy Watch/Highlights/Galaxy Watch.png" width="360px" style="transition: 1s transform ease;" />
 						</div>
 					</div>
+					<!--
 					<div id="galaxy-watch-performance" style="display: none;">
 
 					</div>
@@ -202,6 +213,7 @@
 					<div id="galaxy-watch-specs" style="display: none;">
 
 					</div>
+					-->
 				</div>
 			</div>
 			<div id="galaxy-a9" class="products-product-section">
@@ -215,6 +227,7 @@
 							<li style="border-bottom: 2px solid #a7c353;">
 								<button onclick="selectProductsSection('galaxy-a9-highlights', 'galaxy-a9', 0)">HIGHLIGHTS</button>
 							</li>
+							<!--
 							<li>
 								<button onclick="selectProductsSection('galaxy-a9-performance', 'galaxy-a9', 1)">PERFORMANCE</button>
 							</li>
@@ -224,6 +237,7 @@
 							<li>
 								<button onclick="selectProductsSection('galaxy-a9-specs', 'galaxy-a9', 3)">SPECS</button>
 							</li>
+							-->
 						</ul>
 					</nav>
 				</header>
@@ -242,6 +256,7 @@
 								Now</a>
 						</div>
 					</div>
+					<!--
 					<div id="galaxy-a9-performance">
 
 					</div>
@@ -251,6 +266,7 @@
 					<div id="galaxy-a9-specs">
 
 					</div>
+					-->
 				</div>
 			</div>
 			<div id="galaxy-tab-s4" class="products-product-section">
@@ -264,6 +280,7 @@
 							<li style="border-bottom: 2px solid #a7c353;">
 								<button onclick="selectProductsSection('galaxy-tab-s4-highlights', 'galaxy-tab-s4', 0)">HIGHLIGHTS</button>
 							</li>
+							<!--
 							<li>
 								<button onclick="selectProductsSection('galaxy-tab-s4-performance', 'galaxy-tab-s4', 1)">PERFORMANCE</button>
 							</li>
@@ -273,6 +290,7 @@
 							<li>
 								<button onclick="selectProductsSection('galaxy-tab-s4-specs', 'galaxy-tab-s4', 3)">SPECS</button>
 							</li>
+							-->
 						</ul>
 					</nav>
 				</header>
@@ -286,9 +304,11 @@
 								Made for Supertasking <br />
 								<strong>Galaxy Tab S4</strong>
 							</p>
-							<a class="buy-now-link" href="Shop.html#shopping-section" style="position: absolute; right: 75px; top: 170px;">Buy Now</a>
+							<a class="buy-now-link" href="Shop.html#shopping-section" style="position: absolute; right: 75px; top: 170px;">Buy
+								Now</a>
 						</div>
 					</div>
+					<!--
 					<div id="galaxy-tab-s4-performance">
 
 					</div>
@@ -298,6 +318,7 @@
 					<div id="galaxy-tab-s4-specs">
 
 					</div>
+					-->
 				</div>
 			</div>
 		</div>

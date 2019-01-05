@@ -30,7 +30,6 @@ function init() {
     playing = false;
     gameOver = false;
     sessionStorage.setItem("highScore", "0");
-    highScore = sessionStorage.getItem("highScore");
     allTimeHighScore = localStorage.getItem("allTimeHighScore");
     document.addEventListener('keydown', function (event) {
         if (beginning && event.keyCode == 66) {
@@ -52,17 +51,22 @@ function init() {
         }
     });
     skyImage = new Image();
-    skyImage.src = "Images/Products/Galaxy Note9/Game/Sky.jpg";
     upperPipeImage = new Image();
-    upperPipeImage.src = "Images/Products/Galaxy Note9/Game/Upper Pipe.png";
     lowerPipeImage = new Image();
-    lowerPipeImage.src = "Images/Products/Galaxy Note9/Game/Lower Pipe.png";
     pipes = new Array(2);
     birdImage = new Image();
-    birdImage.src = "Images/Products/Galaxy Note9/Game/Bird.gif";
     floorImage = new Image();
-    floorImage.src = "Images/Products/Galaxy Note9/Game/Floor.png";
     floors = new Array(3);
+    try {
+        skyImage.src = "Images/Products/Galaxy Note9/Game/Sky.jpg";
+        upperPipeImage.src = "Images/Products/Galaxy Note9/Game/Upper Pipe.png";
+        lowerPipeImage.src = "Images/Products/Galaxy Note9/Game/Lower Pipe.png";
+        birdImage.src = "Images/Products/Galaxy Note9/Game/Bird.gif";
+        floorImage.src = "Images/Products/Galaxy Note9/Game/Floor.png";
+    } catch(err) {
+        console.log("Couldn't load the game properly, please try refreshing the page.")
+    }
+    
     resetPositions();
 }
 
