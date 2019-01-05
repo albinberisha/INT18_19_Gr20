@@ -29,6 +29,37 @@
         <hr style="width: 920px; border-style: solid; border-width: 0.5px; border-color: #a7c353; margin: auto;" />
         <div style="padding: 20px;">
             Qitu qitni
+
+            <form method="POST" action="htmlform.html">
+                <fieldset>
+                    <legend>Te dhenat per formular:</legend>
+            
+            <label>Emri</label>
+            <input type="text" name="Emri"/><br>
+            <label>Mbiemri</label>
+            <input type="text" name="Mbiemri"/> <br>
+            <label>Datelindja</label>
+            <input type="date" name="Datelindja"/> <br>
+            <label>Vendlindja</label>
+            <select name="Vendlindja">
+                <option value="-1">---Zgjedh vendin----</option>
+                <option value="1">Mitrovice</option>
+                <option>Prishtine</option>
+                <option>Gjialn</option>
+                <option>Mitrovice</option>
+            </select><br>
+            <label>Gjinia</label>
+            <input type="radio" name="Gjinia" value="M">M
+            <input type="radio" name="Gjinia" value="F">F <br>
+            <label>Gjinia:</label>
+            <input type="checkbox" name="Gjuhet" value="C#"> M
+            <input type="checkbox" name="Gjuhet" value="C++">F
+            <br>
+            </fieldset>
+            <p>
+                <input type="submit" value="Ruaj"/>
+                <input type="reset" value="Reset"/>
+            </p>
         </div>
     </div>
 
