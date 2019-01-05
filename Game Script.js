@@ -63,8 +63,9 @@ function init() {
         lowerPipeImage.src = "Images/Products/Galaxy Note9/Game/Lower Pipe.png";
         birdImage.src = "Images/Products/Galaxy Note9/Game/Bird.gif";
         floorImage.src = "Images/Products/Galaxy Note9/Game/Floor.png";
+        if(skyImage.src == "undefined") throw "202";
     } catch(err) {
-        console.log("Couldn't load the game properly, please try refreshing the page.")
+        console.log(err + " Couldn't load the game properly, please try refreshing the page.")
     }
     
     resetPositions();
