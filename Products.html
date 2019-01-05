@@ -9,6 +9,23 @@
 	<script src="jquery-3.1.1.js"></script>
 	<script src="javascript20.js"></script>
 	<script src="Game Script.js"></script>
+	<script>
+		var i = 0;
+		var j = 0;
+		var k = 0;
+		$(function() {
+			$("#galaxy-note9-game").css("background", "-webkit-radial-gradient(rgb("+(i+new Date().getMilliseconds())%256+", "+(j+new Date().getMilliseconds())%256+", "+(k+new Date().getMilliseconds())%256+"), black");
+		});
+		setInterval(function() {
+			$("#galaxy-note9-game").css("background", "-webkit-radial-gradient(rgb("+(i+new Date().getMilliseconds())%256+", "+(j+new Date().getMilliseconds())%256+", "+(k+new Date().getMilliseconds())%256+"), black");
+			$("#galaxy-note9-game").css("background", "radial-gradient(rgb("+(i+new Date().getMilliseconds())%256+", "+(j+new Date().getMilliseconds())%256+", "+(k+new Date().getMilliseconds())%256+"), black");
+			$("#galaxy-note9-game").css("background", "-moz-radial-gradient(rgb("+(i+new Date().getMilliseconds())%256+", "+(j+new Date().getMilliseconds())%256+", "+(k+new Date().getMilliseconds())%256+"), black");
+			$("#galaxy-note9-game").css("background", "-o-radial-gradient(rgb("+(i+new Date().getMilliseconds())%256+", "+(j+new Date().getMilliseconds())%256+", "+(k+new Date().getMilliseconds())%256+"), black");
+			i++;
+			j+= 2;
+			k+= 3;
+		}, 100);
+	</script>
 </head>
 
 <body onload="start()">

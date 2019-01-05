@@ -1,5 +1,4 @@
 var image_index = 0;
-var d = new Date();
 
 var slider_images = [
     "Images/Be Together.png",
@@ -15,6 +14,14 @@ var slider_overlays = [
     "The Frame TV",
     "Galaxy Watch",
     "Galaxy A9"
+];
+
+var slider_overlay_descriptions = [
+    "",
+    "Galaxy Note9 puts powerful technology in the hands of pioneers. Innovative features make it the only phone to keep up with the next generation of achievers.",
+    "Enhance your living space with a TV that adds premium style and design. The stunning Frame TV transforms into art to elevate the style of any room.",
+    "Stay connected longer. The features of a smartwatch and the natural feeling of an analog watch in a single package. Galaxy Watch links you to the world around you.",
+    "Take advantage of the hyper-mobile lifestyle with the colorful Galaxy A9. Easily capture beautiful photos with the world's first quad lens camera."
 ];
 
 var galaxy_note9 = [
@@ -48,7 +55,8 @@ function select(i) {
     $("#slider-image").attr("src", slider_images[image_index]);
     $("#slider-image").css("display", "none");
     $("#slider-image").fadeIn(1000);
-    $("#overlay-title").text(slider_overlays[image_index]);
+    $("#overlay-title").html(slider_overlays[image_index]);
+    $("#overlay-description").html(slider_overlay_descriptions[image_index]);
     for (var j = 0; j <= 4; j++) {
         if (i == j)
             $("#dots").children("button").eq(j).css("background-color", "white");
@@ -67,6 +75,7 @@ function next() {
     image.style.display = "none";
     $("#slider-image").fadeIn(1000);
     overlay_name.innerHTML = slider_overlays[image_index];
+    document.getElementById("overlay-description").innerHTML = slider_overlay_descriptions[image_index];
     for (var j = 0; j <= 4; j++) {
         if (image_index == j)
             document.getElementById('dots').getElementsByTagName('button')[j].style = "background-color: white;";
@@ -85,6 +94,7 @@ function previous() {
     image.style.display = "none";
     $("#slider-image").fadeIn(1000);
     overlay_name.innerHTML = slider_overlays[image_index];
+    document.getElementById("overlay-description").innerHTML = slider_overlay_descriptions[image_index];
     for (var j = 0; j <= 4; j++) {
         if (image_index == j)
             document.getElementById('dots').getElementsByTagName('button')[j].style = "background-color: white;";
