@@ -129,7 +129,9 @@ body {
 }
 
 #content #about #about-image-container {
-    border: 1px solid #e2e2e2;
+    outline-width: 1px;
+    outline-color: #e2e2e2;
+    outline-style: solid;
     padding: 4px;
     width: 270px;
     height: 140px;
@@ -521,6 +523,7 @@ body {
     background: -moz-radial-gradient(top, rgb(69, 111, 225), black);
     background: -o-radial-gradient(top, rgb(69, 111, 225), black);
     padding: 40px;
+    background-attachment: fixed;
 }
 
 #products-main-container .products-product-section #the-frame-tv-section #the-frame-tv-highlights {
@@ -530,6 +533,7 @@ body {
     background: -o-radial-gradient(top left, white, black);
     padding: 100px;
     text-shadow: 20px 16px 20px black;
+    background-repeat: no-repeat;
 }
 
 #products-main-container .products-product-section #galaxy-watch-section #galaxy-watch-highlights {
@@ -538,6 +542,7 @@ body {
     background: -moz-radial-gradient(top right, #0093ad, black);
     background: -o-radial-gradient(top right, #0093ad, black);
     position: relative;
+    background-position: 0px;
 }
 
 #products-main-container .products-product-section .buy-now-link {

@@ -5,7 +5,7 @@ var floors, floorImage;
 var sky, skyImage;
 var pipes, upperPipeImage, lowerPipeImage;
 var bird, birdImage;
-var score, highScore;
+var score, highScore, allTimeHighScore;
 
 function start() {
     loadGame();
@@ -29,7 +29,16 @@ function init() {
     beginning = true;
     playing = false;
     gameOver = false;
-    highScore = localStorage.getItem("highScore");
+    if(sessionStorage.getItem("highScore") == "[object Undefined]") {
+        highScore = 0;
+        sessionStorage.setItem("highScore", toString(highScore));
+    }
+    else
+        highScore = sessionStorage.getItem("highScore");
+    if(localStorage.getItem("allTimeHighScore") == "[object Undefined]") {
+        allTimeHighScore = 0;
+        localStorage.setItem("allTimeHighScore", toString(allTimeHighScore));
+    }
     document.addEventListener('keydown', function (event) {
         if (beginning && event.keyCode == 66) {
             beginning = false;
@@ -83,6 +92,7 @@ function loop() {
         ctx.fillStyle = "black";
         ctx.fillText("Score: " + score, 135, 300, 200);
         ctx.fillText("High Score: " + highScore, 135, 350, 200);
+        ctx.fillText("All Time High Score: " + allTimeHighScore, 135, 400, 200);
     }
 }
 
@@ -131,9 +141,13 @@ function update() {
             playing = false;
             gameOver = true;
             draw();
-            if (score > parseInt(localStorage.getItem("highScore"), 10)) {
+            if (score > parseInt(localStorage.getItem("allTimeHighScore"), 10)) {
+                allTimeHighScore = score;
+                localStorage.setItem("allTimeHighScore", score.toString(10));
+            }
+            if (score > parseInt(sessionStorage.getItem("highScore"), 10)) {
                 highScore = score;
-                localStorage.setItem("highScore", score.toString(10));
+                sessionStorage.setItem("highScore", score.toString(10));
             }
         }
     }
@@ -227,9 +241,13 @@ function Bird(x, y, width, height, image) {
             this.draw();
             gameOver = true;
             playing = false;
-            if (score > parseInt(localStorage.getItem("highScore"), 10)) {
+            if (score > parseInt(localStorage.getItem("allTimeHighScore"), 10)) {
+                allTimeHighScore = score;
+                localStorage.setItem("allTimeHighScore", score.toString(10));
+            }
+            if (score > parseInt(sessionStorage.getItem("highScore"), 10)) {
                 highScore = score;
-                localStorage.setItem("highScore", score.toString(10));
+                sessionStorage.setItem("highScore", score.toString(10));
             }
         }
         this.t += 0.1;
