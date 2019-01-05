@@ -1,5 +1,4 @@
 var image_index = 0;
-var d = new Date();
 
 var slider_images = [
     "Images/Be Together.png",
