@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-color: #313131;
+    background-color:#313131;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -75,7 +75,7 @@ body {
 
 #slider #dots {
     margin: auto;
-    margin-top: 20px;
+    margin-top: 25px;
     width: max-content;
 }
 
