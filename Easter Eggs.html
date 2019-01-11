@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="stylesheet20.css">
     <script src="javascript20.js"></script>
 
+    
+          
 
     <style>
         table {
@@ -78,6 +80,17 @@
             ev.target.appendChild(document.getElementById(data));
         }
     </script>
+    <script>
+            function validateForm() {
+              var x = document.forms["myForm"]["fname"].value;
+              if (x == "") {
+                alert("Name must be filled out");
+                return false;
+              }
+            }
+            </script>
+
+
 
 
 
@@ -147,8 +160,7 @@
                     <input type="submit" value="Ruaj" />
                     <input type="reset" value="Reset" />
                 </p>
-                =======
-                >>>>>>> 294598f86ceaa6220157a4989b39ed12423ce749
+             
 
 
 
@@ -213,7 +225,6 @@
 
 
 
-
                 <h2 style="text-align:center">Tabela</h2>
 
                 <table>
@@ -224,23 +235,23 @@
                     </tr>
                     <tr>
                         <td>Ardit</td>
-                        <td>Rezon</td>
-                        <td>$100</td>
+                        <td>Konjuhi</td>
+                        <td>100</td>
                     </tr>
                     <tr>
                         <td>Besniku</td>
-                        <td>Filan</td>
-                        <td>$150</td>
+                        <td>Rrmoku</td>
+                        <td>50</td>
                     </tr>
                     <tr>
-                        <td>Fisteku</td>
-                        <td>Edoni</td>
-                        <td>$300</td>
+                        <td>Albin</td>
+                        <td>Qerimi</td>
+                        <td>300</td>
                     </tr>
                     <tr>
-                        <td>Dardani</td>
-                        <td>Korabi</td>
-                        <td>$250</td>
+                        <td>Albin</td>
+                        <td>Berisha</td>
+                        <td>250</td>
                     </tr>
                 </table>
 
@@ -252,18 +263,24 @@
 
 
 
-
-
                 <p>Drag the image back and forth between the two div elements.</p>
 
                 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
                     <img src="Images/foto1.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="20">
                 </div>
 
-                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></form></div>
+                <br/><br/>
 
 
-                >>>>>>> 2ade8ef8dc81369689d7f1f098c25a1e9c9352ee
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    Name: <input type="text" name="fname">
+                    <input type="submit" value="Submit">
+                  </form>
+                 
+        
+
+         
         </div>
     </div>
 
